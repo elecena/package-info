@@ -1,0 +1,8 @@
+# https://docs.travis-ci.com/user/languages/php/
+language: php
+dist: trusty
+php:
+  - '5.6'
+  - '7.0'
+  - '7.1'
+before_script: composer install --no-interaction
