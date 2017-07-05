@@ -1,6 +1,7 @@
 {
     "name": "elecena/ic-package-info",
     "description": "Extract IC package from a given string",
+    "keywords": ["parser", "electronic-components", "electronics-engineering", "integrated-circuits", "elecena"],
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "^5.7"
@@ -12,5 +13,10 @@
             "email": "macbre@elecena.pl"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Elecena\\Utils\\": "src/Elecena/Utils/"
+        }
+    }
 }
