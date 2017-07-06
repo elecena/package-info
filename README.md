@@ -1,7 +1,7 @@
 # ic-package-info [![Build Status](https://travis-ci.org/elecena/ic-package-info.svg?branch=master)](https://travis-ci.org/elecena/ic-package-info)
 Extract IC package from a given string
 
-## Install it
+## Install it from [packagist.org](https://packagist.org/packages/elecena/ic-package-info)
 
 ```
 composer require elecena/ic-package-info
