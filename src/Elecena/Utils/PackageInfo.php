@@ -49,7 +49,7 @@ class PackageInfo {
 			// for normalization
 			'(SOT-?186|SC-?67)',
 		];
-		$pattern = '#(^|-|,|\s|$|\[|\()(' . join('|', $groups) . ')(\)|\]|;|,|=|\s|/|$)#';
+		$pattern = '#(^|-|,|:|\s|$|\[|\()(' . join('|', $groups) . ')(\)|\]|;|,|=|\s|/|$)#';
 
 		if (preg_match(
 			$pattern,

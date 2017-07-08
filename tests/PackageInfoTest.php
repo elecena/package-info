@@ -40,6 +40,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Tranzystor: NPN; TO39; bipolarny; 75V; 500mA; 800mW', 'TO-39' ],
 			[ 'TO39; bipolarny; 75V; 500mA; 800mW', 'TO-39' ],
 
+			[ 'Tranzystor BC107 NPN 45V-100mA-300mW obudowa:TO-18', 'TO-18' ],
+			[ 'BC107B TO-18', 'TO-18' ],
+			[ 'BC107 TO-18 NPN 100mA 45V 300mW', 'TO-18' ],
+
 			[ 'BTA26-600BRG TRIAC 600V 25A TOP3', 'TOP3' ],
 			[ '2SK2370 NEC MOSFET 500V 20A TOP-3 TRANSISTOR', 'TOP3' ],
 
