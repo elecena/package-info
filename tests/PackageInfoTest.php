@@ -111,6 +111,19 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '64-TQFP', 'TQFP64' ],
 			[ '80-TQFP', 'TQFP80' ],
 
+			[ '32-LQFP', 'LQFP32' ],
+			[ '44-LQFP', 'LQFP44' ],
+			[ '48-LQFP', 'LQFP48' ],
+			[ '52-LQFP', 'LQFP52' ],
+			[ '64-LQFP', 'LQFP64' ],
+			[ '80-LQFP', 'LQFP80' ],
+			[ '100-LQFP', 'LQFP100' ],
+			[ '112-LQFP', 'LQFP112' ],
+			[ '120-LQFP', 'LQFP120' ],
+			[ '128-LQFP', 'LQFP128' ],
+			[ '144-LQFP', 'LQFP144' ],
+			[ '176-LQFP', 'LQFP176' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],
