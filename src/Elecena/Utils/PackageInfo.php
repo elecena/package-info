@@ -47,6 +47,8 @@ class PackageInfo {
 			'SP(1|3|4|6|6-P)',
 			// Clipwatt
 			'CLIPWATT(-|\s)?(11|15|19)',
+			// Ball Grid Array / https://en.wikipedia.org/wiki/Ball_grid_array
+			'(BGA|CABGA|CSPBGA|DSBGA|FBGA|FCBGA|FCPBGA|FPBGA|FTBGA|HBGA|PBGA|TBGA|TFBGA|TWBGA|UBGA|VFBGA)-?(4|5|6|48|63|64|90|96|108|113|119|121|132|144|165|191|208|256|324|400|480|484|672|676|780|783|896|900|1152|1156|1517|1704|1760|1932)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',

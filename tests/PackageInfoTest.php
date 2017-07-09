@@ -124,6 +124,14 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '144-LQFP', 'LQFP144' ],
 			[ '176-LQFP', 'LQFP176' ],
 
+			[ 'S29GL128P11FFIV10 MEMORY, FLASH NOR, 128MBIT, FBGA-64', 'FBGA64' ],
+			[ 'SDRAM, DDR3, 128M x 16bit, 1.25 ns, FBGA-96', 'FBGA96' ],
+			[ 'XQ7K410T-1RF900I IC FPGA KINTEX-7 900-FBGA', 'FBGA900', ],
+			[ 'XQ2VP70-5FF1704N IC FPGA VIRTEX-II PRO 1704-FBGA', 'FBGA1704' ],
+			[ 'MPC8360VVAGDGA Microprocessor, MPC8360 Series, 400 MHz, TBGA-191', 'TBGA191' ],
+			[ 'Microprocessor, PowerQUICC II Series, 450 MHz, 1.45 V to 1.6 V, TBGA-480', 'TBGA480' ],
+			[ 'IC SDRAM 8GBIT 1.067GHZ FBGA', false ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],
