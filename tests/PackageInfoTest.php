@@ -92,6 +92,13 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Rezonator kwarcowy 16MHz - HC49 - niski', 'HC49' ],
 			[ 'HC49/4HSMX 30/50/20/18 30 MHZ - Kryształ, 30 MHz, SMD, 11.4mm x 4.9mm, 50 ppm, 18 pF, 30 ppm, Seria HC-49/4HSMX', 'HC49' ],
 
+			[ 'STA540SA (STA540 SA) Clipwatt-19', 'CLIPWATT-19' ],
+			[ 'STA540SAN (STA540 SAN) Clipwatt-15', 'CLIPWATT-15' ],
+			[ 'STA540SA CLIPWATT-19', 'CLIPWATT-19' ],
+			[ 'STA540SA (STA540 SA) 4 x 10-watt dual/quad power amplifier Clipwatt 19', 'CLIPWATT-19' ],
+			[ 'STV-9556 CLIPWATT-11 RGB AMPLIFIER UKŁAD', 'CLIPWATT-11' ],
+			[ 'TDA-7269-SA CLIPWATT-11 UKŁAD', 'CLIPWATT-11' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],

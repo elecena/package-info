@@ -45,6 +45,8 @@ class PackageInfo {
 			'(SOT-?227(B|-4)?)|ISOTOP®',
 			// http://www.ferret.com.au/c/richardson-electronics/100v-mosfet-modules-in-sp3-sp4-sp6-packages-n679793 / mosfet modules
 			'SP(1|3|4|6|6-P)',
+			// Clipwatt
+			'CLIPWATT(-|\s)?(11|15|19)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -58,8 +60,9 @@ class PackageInfo {
 		) {
 			$package = $matches[2];
 
+			$package = str_replace(' ', '', $package); # remove spaces in 'CLIPWATT 19' => 'CLIPWATT19'
 			$package = preg_replace('#([A-Z])-(\d+)#', '$1$2', $package); # remove dash in DIL-14 -> "DIL14"
-			$package = preg_replace('#(TO|DO)(\d+)#', '$1-$2', $package); # add dash to TO92 and DO-14 -> "TO-92"
+			$package = preg_replace('#(TO|DO|CLIPWATT)(\d+)#', '$1-$2', $package); # add dash to TO92, DO-14 and CLIPWATT19 -> "TO-92"
 
 			/**
 			 * Normalize packages
