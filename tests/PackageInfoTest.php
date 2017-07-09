@@ -133,6 +133,24 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Microprocessor, PowerQUICC II Series, 450 MHz, 1.45 V to 1.6 V, TBGA-480', 'TBGA480' ],
 			[ 'IC SDRAM 8GBIT 1.067GHZ FBGA', false ],
 
+			// DigiKey normalization
+			#[ '6-XSON, SOT886 (1.45x1)', '' ],
+			#[ '8-XSON, SOT996-2 (2x3)', '' ],
+			[ 'DO-200AA, R62', 'DO-200AA' ],
+			[ 'DO-200AB, B-PUK', 'DO-200AB' ],
+			[ 'DO-205AB, DO-9', 'DO-205AB' ],
+			[ 'DO-213AB (MELF, LL41)', 'DO-213AB' ],
+			[ 'DO-214AB, (SMC)', 'DO-214AB' ],
+			#[ 'LFPAK56, Power-SO8', '' ],
+
+			[ 'Tranzystor P-MOSFET 55V 18A DPAK TO-252', 'TO-252' ],
+			[ 'TO-252, (D-Pak)', 'TO-252' ],
+			[ 'D-Pak', 'TO-252' ],
+			[ 'DPAK', 'TO-252' ],
+			[ 'CSD19506KTT MOSFET N-CH 80V 200A DDPAK-3', 'TO-263' ],
+			[ 'Stabilizator napięcia LDO LM1085IS-5.0/NOPB 3A 5 V 2,6 → 25 Vin TO-263 3-Pin', 'TO-263' ],
+			[ 'IC REG LDO 5V 0.15A DDPAK', 'TO-263' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],

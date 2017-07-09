@@ -32,8 +32,8 @@ class PackageInfo {
 			'[CEMP]?DIP-?(6|8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			'[TUVWX]?DFN-?(3|4|6|8|10|12|14|16|20|22)',
 			'HC-?49(-?[US])?',
-			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204
-			'DO-?(7|14|15|16|26|29|34|35|41|201AC|201AD|201AE|204-?AA|204-?AH|204-?AL)',
+			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
+			'DO-?(7|14|15|16|26|29|34|35|41|201AC|201AD|201AE|204-?AA|204-?AH|204-?AL|205AB|200AA|200AB|((213|214)(AA|AB|AC|BA)))',
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			// https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package / http://anysilicon.com/ultimate-guide-qfn-package/
@@ -48,6 +48,9 @@ class PackageInfo {
 			'CLIPWATT(-|\s)?(11|15|19)',
 			// Ball Grid Array / https://en.wikipedia.org/wiki/Ball_grid_array
 			'(BGA|CABGA|CSPBGA|DSBGA|FBGA|FCBGA|FCPBGA|FPBGA|FTBGA|HBGA|PBGA|TBGA|TFBGA|TWBGA|UBGA|VFBGA)-?(4|5|6|48|63|64|90|96|108|113|119|121|132|144|165|191|208|256|324|400|480|484|672|676|780|783|896|900|1152|1156|1517|1704|1760|1932)',
+			// DPAK (TO-252) / https://en.wikipedia.org/wiki/TO-263
+			'(D-?PAK|D2PAK|DDPAK)-?(3|5)?',
+			'TO-?(252|263)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -62,7 +65,7 @@ class PackageInfo {
 			$package = $matches[2];
 
 			$package = str_replace(' ', '', $package); # remove spaces in 'CLIPWATT 19' => 'CLIPWATT19'
-			$package = preg_replace('#([A-Z])-(\d+)#', '$1$2', $package); # remove dash in DIL-14 -> "DIL14"
+			$package = preg_replace('#([A-Z])-([A-Z\d]+)#', '$1$2', $package); # remove dash in DIL-14 -> "DIL14"
 			$package = preg_replace('#(TO|DO|CLIPWATT)(\d+)#', '$1-$2', $package); # add dash to TO92, DO-14 and CLIPWATT19 -> "TO-92"
 
 			/**
@@ -97,6 +100,18 @@ class PackageInfo {
 				'SOT227' => 'SOT-227',
 				'SOT227-4' => 'SOT-227',
 				'SOT227B' => 'SOT-227B',
+
+				// TO-252 is known as DPAK (Decawat Package)
+				// Package can have 3 pins with 90 mils pitch, or 5 pins with 45 mils pitch.
+				// @see https://en.wikipedia.org/wiki/TO-252
+				'DPAK' => 'TO-252',
+
+				// TO-263 is known as DDPAK
+				// @see https://en.wikipedia.org/wiki/TO-263
+				'DDPAK' => 'TO-263',
+				'DDPAK3' => 'TO-263',
+				'DDPAK5' => 'TO-263',
+				'D2PAK' => 'TO-263',
 			];
 
 			if (array_key_exists($package, $normalizations)) {
