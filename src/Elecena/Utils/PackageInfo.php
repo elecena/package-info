@@ -15,12 +15,11 @@ class PackageInfo {
 		$package = false;
 		$desc = strtoupper($desc);
 
-		/**
-		 * "Swap" package signatures
-		 *
-		 * 64-LQFP -> LQFP64
-		 */
+		// "swap" package signatures / 64-LQFP -> LQFP64
 		$desc = preg_replace('#(\d{2,})-([A-Z]{2,})#', '$2$1', $desc);
+
+		// DIP 6 -> DIP-6
+		$desc = preg_replace('#([A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
 
 		$groups = [
 			'TO-?(111|114|116|126|18|220|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82|92)(SG|F)?',
@@ -30,7 +29,7 @@ class PackageInfo {
 			'DIL-?(8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'([MTS]?SOP?|TSSOP?|SOIC)-?(8|10|14|16|18|20|24|28|32|38)(\-W)?',
-			'[CEMP]?DIP-?(8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
+			'[CEMP]?DIP-?(6|8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			'[TUVWX]?DFN-?(3|4|6|8|10|12|14|16|20|22)',
 			'HC-?49(-?[US])?',
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204

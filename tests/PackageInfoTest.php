@@ -79,6 +79,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Nadajnik linii; RS422,RS485; L.nad:4; DIP16; 4,75÷5,25VDC; 0÷70°C', 'DIP16' ],
 			[ 'Nadajnik-odbiornik linii; RS422 / RS485; 5VDC; DIP8', 'DIP8' ],
 			[ 'Pamięć; EEPROM; UNI/O; 128x8bit; 1,8÷5,5V; 100kHz; DIP-8', 'DIP8' ],
+			[ 'Transoptor 4N37 z tranzystorem 1-kanałowy DC DIP 6 Vishay', 'DIP6' ],
 
 			[ 'Układ scalony MAX7219CNG [DIL-22]', 'DIL22' ],
 			[ 'Mikrokontroler AVR-RISC Atmel ATTINY26-16PU, DIL-20, 0 - 16 MHz Flash: 2 kB, RAM: 128', 'DIL20' ],
