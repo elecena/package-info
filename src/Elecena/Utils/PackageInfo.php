@@ -38,7 +38,7 @@ class PackageInfo {
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			// https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package / http://anysilicon.com/ultimate-guide-qfn-package/
-			'(QFN|MLF|MLPD|MLPM|MPLPQ|VQFN|DFN)-?(28|100|128|144|176|208|32|44|48|52|64|80)',
+			'(HTQFP|TQFP|QFN|MLF|MLPD|MLPM|MPLPQ|VQFN|DFN)-?(28|100|128|144|176|208|32|44|48|52|64|80)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor
 			'SOT23-?(3|5|6|8)',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package

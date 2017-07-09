@@ -99,6 +99,18 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'STV-9556 CLIPWATT-11 RGB AMPLIFIER UKŁAD', 'CLIPWATT-11' ],
 			[ 'TDA-7269-SA CLIPWATT-11 UKŁAD', 'CLIPWATT-11' ],
 
+			[ 'ATMEGA64-16AU Obudowa:TQFP64', 'TQFP64' ],
+			[ '100-TQFP (14x14)', 'TQFP100' ],
+			[ '128-TQFP (10x10)', 'TQFP128' ],
+			[ '144-TQFP', 'TQFP144' ],
+			[ '32-TQFP', 'TQFP32' ],
+			[ '44-TQFP', 'TQFP44' ],
+			[ '48-HTQFP', 'HTQFP48' ],
+			[ '48-TQFP', 'TQFP48' ],
+			[ '64-HTQFP', 'HTQFP64' ],
+			[ '64-TQFP', 'TQFP64' ],
+			[ '80-TQFP', 'TQFP80' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],
