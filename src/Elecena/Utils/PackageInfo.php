@@ -3,7 +3,9 @@
 namespace Elecena\Utils;
 
 /**
- * Parameters parser
+ * IC packages parsing utilities
+ *
+ * @see http://www.intersil.com/en/support/packaginginfo.html
  */
 class PackageInfo {
 
