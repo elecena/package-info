@@ -6,6 +6,7 @@ namespace Elecena\Utils;
  * IC packages parsing utilities
  *
  * @see http://www.intersil.com/en/support/packaginginfo.html
+ * @see http://www.interfacebus.com/semiconductor-transistor-packages.html
  */
 class PackageInfo {
 
@@ -31,6 +32,8 @@ class PackageInfo {
 			// https://en.wikipedia.org/wiki/TO-220
 			'I?TO-?220(AB|AC|F|FP|SG)?',
 			'TOP-?(3)',
+			// If more heat needs to be dissipated, devices in the also widely used TO-247 (or TO-3P) package can be selected / TO-3PF variant a slightly lower one
+			'TO-?(247|3|3P|3PF)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'(LF|L|M|P|V|VF)?QFP(N)?-?(100|128|144|176|208|32|44|48|52|64|80)',
 			'DIL-?(8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
@@ -131,6 +134,10 @@ class PackageInfo {
 				'DDPAK3' => 'TO-263',
 				'DDPAK5' => 'TO-263',
 				'D2PAK' => 'TO-263',
+
+				// ... widely used TO-247 (or TO-3P)
+				'TO-3' => 'TO-247',
+				'TO-3P' => 'TO-247',
 			];
 
 			if (array_key_exists($package, $normalizations)) {

@@ -38,6 +38,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '7806CV 1,5A TO220(Single Gauge=0.6mm) * Liczba w opakowaniu:50 * Obudowa:TO220SG=0.6mm', 'TO-220SG' ],
 			[ 'DIODE ARRAY SCHOTTKY 45V ITO220', 'ITO-220' ],
 
+			[ 'Tranzystor PNP 100 V 25 A 3 MHz HFE 10 TO-247 TIP36C 3-Pin', 'TO-247' ],
+			[ 'BU626A TO-3', 'TO-247' ],
+			[ 'Dioda FYA3010DNTU 30A 100V TO-3P 3-Pin', 'TO-247' ],
+			[ 'IGBT 600V 24A 54W TO-3PF', 'TO-3PF' ],
+
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO92', 'TO-92' ],
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO-92', 'TO-92' ],
 
