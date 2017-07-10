@@ -36,6 +36,7 @@ class PackageInfo {
 			'DO-?(7|14|15|16|26|29|34|35|41|201AC|201AD|201AE|204-?AA|204-?AH|204-?AL|205AB|200AA|200AB|((213|214)(AA|AB|AC|BA)))',
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
+			'SOD-?(323|523)F?',
 			// https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package / http://anysilicon.com/ultimate-guide-qfn-package/
 			'(HTQFP|TQFP|LQFP|QFN|MLF|MLPD|MLPM|MPLPQ|VQFN|DFN)-?(10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor
@@ -55,7 +56,7 @@ class PackageInfo {
 			// for normalization
 			'(SOT-?186|SC-?67)',
 		];
-		$pattern = '#(^|-|,|:|\s|$|\[|\()(' . join('|', $groups) . ')(\)|\]|;|,|=|\s|/|$)#';
+		$pattern = '#(^|-|,|:|\s|$|\[|\(|/)(' . join('|', $groups) . ')(\)|\]|;|,|=|\s|/|$)#';
 
 		if (preg_match(
 			$pattern,

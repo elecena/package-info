@@ -158,6 +158,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Stabilizator napięcia LDO LM1085IS-5.0/NOPB 3A 5 V 2,6 → 25 Vin TO-263 3-Pin', 'TO-263' ],
 			[ 'IC REG LDO 5V 0.15A DDPAK', 'TO-263' ],
 
+			[ '0603/SOD-523F', 'SOD523F' ],
+			[ '1005/SOD-323F', 'SOD323F' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],
