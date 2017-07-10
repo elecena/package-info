@@ -16,7 +16,7 @@ class PackageInfo {
 		$desc = strtoupper($desc);
 
 		// "swap" package signatures / 64-LQFP -> LQFP64
-		$desc = preg_replace('#(\d{1,})-([A-Z]{2,})#', '$2$1', $desc);
+		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
 
 		// DIP 6 -> DIP-6
 		$desc = preg_replace('#([A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
@@ -52,6 +52,8 @@ class PackageInfo {
 			// DPAK (TO-252) / https://en.wikipedia.org/wiki/TO-263
 			'(D-?PAK|D2PAK|DDPAK)-?(3|5)?',
 			'TO-?(252|263)',
+			// SON
+			'(PG-TD|W|V|X|X2)?SON-?(4|6|8|10)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',

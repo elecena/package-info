@@ -144,8 +144,15 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'IC SDRAM 8GBIT 1.067GHZ FBGA', false ],
 
 			// DigiKey normalization
-			#[ '6-XSON, SOT886 (1.45x1)', '' ],
-			#[ '8-XSON, SOT996-2 (2x3)', '' ],
+			[ '8-SON (A) (2.9x2.8)', 'SON8' ],
+			[ '6-SON (1.45x1)', 'SON6' ],
+			[ '6-XSON, SOT886 (1.45x1)', 'XSON6' ],
+			[ '8-XSON, SOT996-2 (2x3)', 'XSON8' ],
+			[ '10-WSON (3x3)', 'WSON10' ],
+			[ '10-VSON (3x3)', 'VSON10' ],
+			[ '4-X2SON (1x1)', 'X2SON4' ],
+			[ 'PG-TDSON-8', 'PGTDSON-8' ],
+
 			[ 'DO-200AA, R62', 'DO-200AA' ],
 			[ 'DO-200AB, B-PUK', 'DO-200AB' ],
 			[ 'DO-205AB, DO-9', 'DO-205AB' ],
