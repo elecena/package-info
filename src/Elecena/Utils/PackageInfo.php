@@ -40,7 +40,7 @@ class PackageInfo {
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			'SOD-?(323|523)F?',
 			// https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package / http://anysilicon.com/ultimate-guide-qfn-package/
-			'(HTQFP|TQFP|LQFP|QFN|MLF|MLPD|MLPM|MPLPQ|VQFN|DFN|DHVQFN|TQFN|WQFN|UQFN)-?(10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP)?',
+			'(HTQFP|TQFP|LQFP|QFN|MLF|MLPD|MLPM|MPLPQ|VQFN|DFN|DHVQFN|TQFN|WQFN|UQFN)-?(10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP|S)?',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor
 			'SOT23-?(3|5|6|8)',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
@@ -60,6 +60,8 @@ class PackageInfo {
 			'(LFCSP|CSP|FCCSP|CSP|WL-CSP)-?(8|10|16|20|24|32|48|64)-?(VQ|WD|WQ)?',
 			// Chip carrier / https://en.wikipedia.org/wiki/Chip_carrier
 			'(BCC|CLCC|LCC|LCCC|DLCC|PLCC)-?(4|6|8|10|20|28|32|44|52|68|84)',
+			// μMAX seems to be a package solely used by Maxim. It's an 8 pin SMT package, about as wide as an SO-8, but just 3mm long instead of the 5mm of an SO-8
+			'(UMAX|USOP)-?(8|10)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',

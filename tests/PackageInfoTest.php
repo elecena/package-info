@@ -130,6 +130,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LMK03328RHST "Clock Generator, 300 MHz, 3.135 V to 3.465 V, 8 Outputs, WQFN-48', 'WQFN48' ],
 			[ 'DSPIC33EP16GS202-I/MX DSC, 16BIT, 16KB, 140MHZ, 3.6V, UQFN-28', 'UQFN28' ],
 
+			# [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ], # TODO
+
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
 			[ 'ADXL325BCPZ Small, Low Power, 3-Axis +/-5 g Accelerometer, 16-LFCSP, Analog Devices, RoHS', 'LFCSP16' ],
@@ -191,6 +193,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
+
+			[ 'PWM CONTROLLER, 1KHZ, 26.5V, UMAX-8', 'UMAX8' ],
+			[ 'MAX5703AUB DAC, 8BIT, UMAX-10', 'UMAX10' ],
+			[ 'IC POT NV 128POS HV 10-USOP', 'USOP10' ],
+			[ 'DS1080LU CLOCK GENERATOR, 134MHZ, USOP-8', 'USOP8' ],
 
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
