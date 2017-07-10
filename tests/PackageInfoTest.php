@@ -113,6 +113,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Nadajnik-odbiornik linii; RS422 / RS485; 5VDC; DIP8', 'DIP8' ],
 			[ 'Pamięć; EEPROM; UNI/O; 128x8bit; 1,8÷5,5V; 100kHz; DIP-8', 'DIP8' ],
 			[ 'Transoptor 4N37 z tranzystorem 1-kanałowy DC DIP 6 Vishay', 'DIP6' ],
+			[ 'IC VREF SERIES PREC 5V 8-CERDIP', 'CERDIP8' ],
+			[ 'IC FPS POWER SWITCH 650V 8-MDIP', 'MDIP8' ],
+			[ 'LNK6769V IC LINKSWITCH 39W 54W 12-EDIP', 'EDIP12' ],
+			[ 'TODX283 PRODUCENT / MANUFACTURER: TOSHIBA OBUDOWA / PACKAGE: DIP-10 OPTOELECTRONIC', 'DIP10' ],
+			[ 'FOO DIP-11', false ],
 
 			[ 'PIC16C55A-04/SP 8-bit Microcontrollers - MCU .75KB 24 RAM 20 I/O 4MHz SPDIP-28', 'SPDIP28' ],
 			[ 'PIC32MX230F256B-I/SP MCU, 32BIT, PIC32MX, 50MHZ, SDIP-28', 'SDIP28' ],
@@ -156,7 +161,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LMK03328RHST "Clock Generator, 300 MHz, 3.135 V to 3.465 V, 8 Outputs, WQFN-48', 'WQFN48' ],
 			[ 'DSPIC33EP16GS202-I/MX DSC, 16BIT, 16KB, 140MHZ, 3.6V, UQFN-28', 'UQFN28' ],
 
+			# N-pin handling
 			# [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ], # TODO
+			# [ 'Wzmacniacz operacyjny LF411CN/NOPB 4MHz MDIP, 8-Pin', 'MDIP8' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
