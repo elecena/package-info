@@ -93,6 +93,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'DC-DC Switching Buck Regulator, Adjustable, 4.5 V-18 Vin, 0.6 V-5 V/4 A out, 500 kHz, TSOT-23-8', 'TSOT23-8' ],
 			[ 'IC OPAMP VFB 90MHZ RRO TSOT-5', 'TSOT23-5' ],
 
+			[ 'TRANS NPN 80V 1A SOT-89', 'SOT89-3' ],
+			[ 'MOSFET, N CHANNEL, 300V, 0.2A, SOT-89-3' ,'SOT89-3' ],
+			[ 'RF Amplifier IC, 21 dB Gain / 4.5 dB Noise, DC to 4 GHz, 5 V supply, SOT-89-4', 'SOT89-3' ],
+			[ 'IC LDO 0.2A LOW DROPOUT SOT-89-5', 'SOT89-5' ],
+
 			[ 'DIODE AVALANCHE 200V 2A SOD57', 'SOD57' ],
 			[ 'BYD37M PRODUCENT / MANUFACTURER: PHILIPS OBUDOWA / PACKAGE: SOD-87 FAST SOFT-RECOVERY CONTROLLED', 'SOD87' ],
 
