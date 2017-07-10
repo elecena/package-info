@@ -208,6 +208,14 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'IC POT NV 128POS HV 10-USOP', 'USOP10' ],
 			[ 'DS1080LU CLOCK GENERATOR, 134MHZ, USOP-8', 'USOP8' ],
 
+			[ 'IC SUPERVISOR 1.8V USP-3', 'USP3' ],
+			[ 'IC REG LDO 2.85V 0.2A USP4', 'USP4' ],
+			[ '4-USP (1.2x1.6)', 'USP4' ],
+			[ 'IC REG BUCK 1.5V 0.6A SYNC USP-6', 'USP6' ],
+			[ 'IC VOLT DET TIME DLY 2.5V 4-USPN', 'USPN4' ],
+			[ 'IC REG LDO 2.5V 0.3A USPQ-4B03', 'USPQ4B03' ],
+			[ 'IC REG BST ADJ 1.2A SYNC USP10B', 'USP10B' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],

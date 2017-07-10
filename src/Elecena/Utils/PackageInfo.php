@@ -7,6 +7,7 @@ namespace Elecena\Utils;
  *
  * @see http://www.intersil.com/en/support/packaginginfo.html
  * @see http://www.interfacebus.com/semiconductor-transistor-packages.html
+ * @see https://www.torexsemi.com/technical-support/packages/
  */
 class PackageInfo {
 
@@ -73,6 +74,8 @@ class PackageInfo {
 			'(BCC|CLCC|LCC|LCCC|DLCC|PLCC)-?(4|6|8|10|20|28|32|44|52|68|84)',
 			// μMAX seems to be a package solely used by Maxim. It's an 8 pin SMT package, about as wide as an SO-8, but just 3mm long instead of the 5mm of an SO-8
 			'(UMAX|USOP)-?(8|10)',
+			// Torex packages / https://www.torexsemi.com/technical-support/packages/
+			'USP(N|Q)?-?(3|4|6|10)(B|B03)?',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
