@@ -88,6 +88,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ 'ATTINY10-TS8R Mikrokontroler AVR; SRAM:32B; Flash:1kB; SOT23-6; Uzas:1,8÷5,5V', 'SOT23-6' ],
 			[ 'MCP3421A0T-E/CH - 18-bitowy przetwornik A/D SMD SOT23-6 PBF', 'SOT23-6' ],
+			[ 'IC LDO 300MA LOW IQ TSOT-23-5', 'TSOT23-5' ],
+			[ 'Układ napięcia odniesienia, precyzyjny, szeregowy - stały, seria LT6656, 5V, TSOT-23-6', 'TSOT23-6' ],
+			[ 'DC-DC Switching Buck Regulator, Adjustable, 4.5 V-18 Vin, 0.6 V-5 V/4 A out, 500 kHz, TSOT-23-8', 'TSOT23-8' ],
+			[ 'IC OPAMP VFB 90MHZ RRO TSOT-5', 'TSOT23-5' ],
 
 			[ 'DIODE AVALANCHE 200V 2A SOD57', 'SOD57' ],
 			[ 'BYD37M PRODUCENT / MANUFACTURER: PHILIPS OBUDOWA / PACKAGE: SOD-87 FAST SOFT-RECOVERY CONTROLLED', 'SOD87' ],

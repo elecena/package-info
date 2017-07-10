@@ -53,8 +53,9 @@ class PackageInfo {
 			'(CDFN|DFN|DQFN|DRMLF|LLP|LPCC|MLF|TMLF|MLPD|MLPM|MLPQ|QFN|QFN-TEP|TDFN|TQFN|UQFN|UTDFN|VQFN|WQFN|XDFN|DHVQFN|WDFN|UDFN)-?(4|5|6|8|10|12|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP|S)?',
 			// Quad Flat Package / https://en.wikipedia.org/wiki/Quad_Flat_Package
 			'(BQFP|BQFPH|CQFP|EQFP|FQFP|LQFP|MQFP|NQFP|SQFP|TDFP|TQFP|VQFP|VTQFP|HTQFP)-?(4|5|6|8|10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)',
-			// https://en.wikipedia.org/wiki/Small-outline_transistor
-			'SOT23-?(3|5|6|8)',
+			// https://en.wikipedia.org/wiki/Small-outline_transistor / Many manufacturers[1][2] also offer the nearly identical thin small outline transistor (TSOT)
+			'T?SOT-?23-?(3|5|6|8)',
+			'TSOT-?5',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
 			// http://www.ferret.com.au/c/richardson-electronics/100v-mosfet-modules-in-sp3-sp4-sp6-packages-n679793 / mosfet modules
@@ -115,6 +116,7 @@ class PackageInfo {
 				'SOT353' => 'SOT23-5',
 				'SOT363' => 'SOT23-6',
 				'SOT28' => 'SOT23-8',
+				'TSOT5' => 'TSOT23-5',
 
 				// TO-220F also known as the SOT186 and SC67 is TO-220 like package, where the heatsink mounting tab has been encased in the plastic
 				'SOT186' => 'TO-220F',
