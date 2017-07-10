@@ -54,6 +54,8 @@ class PackageInfo {
 			'TO-?(252|263)',
 			// SON
 			'(PG-TD|W|V|X|X2)?SON-?(4|6|8|10)',
+			// Leadframe Chip Scale Package / https://en.wikipedia.org/wiki/Chip-scale_package
+			'(LFCSP|CSP|FCCSP|CSP|WL-CSP)-?(8|10|16|20|24|32|48|64)-?(VQ|WD|WQ)?',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',

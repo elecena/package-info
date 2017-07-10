@@ -121,6 +121,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ 'Transceiver, 74LVC8T245, 1.2 V do 5.5 V, DHVQFN-24', 'DHVQFN24' ],
 
+			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
+			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
+			[ 'ADXL325BCPZ Small, Low Power, 3-Axis +/-5 g Accelerometer, 16-LFCSP, Analog Devices, RoHS', 'LFCSP16' ],
+			[ '24-LFCSP-WQ (4x4)', 'LFCSP24-WQ' ],
+
 			[ '32-LQFP', 'LQFP32' ],
 			[ '44-LQFP', 'LQFP44' ],
 			[ '48-LQFP', 'LQFP48' ],
