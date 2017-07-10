@@ -199,6 +199,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'CSD19506KTT MOSFET N-CH 80V 200A DDPAK-3', 'TO-263' ],
 			[ 'Stabilizator napięcia LDO LM1085IS-5.0/NOPB 3A 5 V 2,6 → 25 Vin TO-263 3-Pin', 'TO-263' ],
 			[ 'IC REG LDO 5V 0.15A DDPAK', 'TO-263' ],
+			[ 'DIODE, 10A, 50V, TO-263AB', 'TO-263AB' ],
+			[ 'STEP-DOWN REGULATOR, TO-263-5', 'TO-263-5' ],
 
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
@@ -238,6 +240,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '144-LQFP (20x20)', 'LQFP144' ],
 			[ '10-MLF® (3x3)', 'MLF10' ],
 			[ 'NIS5135MN1TXG Kontroler Hot Swap, zasilanie 3.1V do 18V, DFN-10', 'DFN10' ],
+			[ 'TO-263AB (D²PAK)', 'TO-263AB' ],
+			[ 'D²PAK (TO-263AB)', 'TO-263AB' ],
 			#[ 'NCP103AMX105TCG Stabilizator napięcia LDO, stały, wejście 1.7V do -5.5V, wyjście 1.05Vnom / 150mA, µDFN-4', 'µDFN4' ], # TODO
 
 			// https://en.wikipedia.org/wiki/DO-204
