@@ -119,6 +119,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '64-TQFP', 'TQFP64' ],
 			[ '80-TQFP', 'TQFP80' ],
 
+			[ 'Transceiver, 74LVC8T245, 1.2 V do 5.5 V, DHVQFN-24', 'DHVQFN24' ],
+
 			[ '32-LQFP', 'LQFP32' ],
 			[ '44-LQFP', 'LQFP44' ],
 			[ '48-LQFP', 'LQFP48' ],
