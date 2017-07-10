@@ -125,6 +125,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '144-LQFP', 'LQFP144' ],
 			[ '176-LQFP', 'LQFP176' ],
 
+			[ '32-VFQFPN (5x5)', 'VFQFPN32' ],
+			[ '44-MQFP (10x10)', 'MQFP44' ],
+
 			[ 'S29GL128P11FFIV10 MEMORY, FLASH NOR, 128MBIT, FBGA-64', 'FBGA64' ],
 			[ 'SDRAM, DDR3, 128M x 16bit, 1.25 ns, FBGA-96', 'FBGA96' ],
 			[ 'XQ7K410T-1RF900I IC FPGA KINTEX-7 900-FBGA', 'FBGA900', ],

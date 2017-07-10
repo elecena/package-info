@@ -25,7 +25,7 @@ class PackageInfo {
 			'TO-?(111|114|116|126|18|220|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82|92)(SG|F)?',
 			'TOP-?(3)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
-			'LQFP-?(100|128|144|176|208|32|44|48|52|64|80)',
+			'(LF|L|M|P|V|VF)?QFP(N)?-?(100|128|144|176|208|32|44|48|52|64|80)',
 			'DIL-?(8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'([MTS]?SOP?|TSSOP?|SOIC)-?(8|10|14|16|18|20|24|28|32|38)(\-W)?',
