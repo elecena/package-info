@@ -15,7 +15,10 @@ class PackageInfo {
 	 */
 	public static function getPackage($desc) {
 		$package = false;
-		$desc = strtoupper($desc);
+		$desc = mb_strtoupper($desc);
+
+		// remove noise
+		$desc = strtr($desc, '®', ' ');
 
 		// "swap" package signatures / 64-LQFP -> LQFP64
 		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
@@ -34,19 +37,20 @@ class PackageInfo {
 			'[CEMP]?DIP-?(6|8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			// Slim plastic dip" (0.3" lead spacing) versus the usual 0.4" spacing used on 28- and 40-pin packages
 			'SP?DIP-?(28|40)',
-			'[TUVWX]?DFN-?(3|4|6|8|10|12|14|16|20|22)',
 			'HC-?49(-?[US])?',
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
 			'DO-?(7|14|15|16|26|29|34|35|41|201AC|201AD|201AE|204-?AA|204-?AH|204-?AL|205AB|200AA|200AB|((213|214)(AA|AB|AC|BA)))',
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			'SOD-?(323|523)F?',
-			// https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package / http://anysilicon.com/ultimate-guide-qfn-package/
-			'(HTQFP|TQFP|LQFP|QFN|MLF|MLPD|MLPM|MPLPQ|VQFN|DFN|DHVQFN|TQFN|WQFN|UQFN)-?(10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP|S)?',
+			//  Quad Flat No-leads package / https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package#Variants / http://anysilicon.com/ultimate-guide-qfn-package/
+			'(CDFN|DFN|DQFN|DRMLF|LLP|LPCC|MLF|TMLF|MLPD|MLPM|MLPQ|QFN|QFN-TEP|TDFN|TQFN|UQFN|UTDFN|VQFN|WQFN|XDFN|DHVQFN|WDFN|UDFN)-?(4|5|6|8|10|12|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP|S)?',
+			// Quad Flat Package / https://en.wikipedia.org/wiki/Quad_Flat_Package
+			'(BQFP|BQFPH|CQFP|EQFP|FQFP|LQFP|MQFP|NQFP|SQFP|TDFP|TQFP|VQFP|VTQFP|HTQFP)-?(4|5|6|8|10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor
 			'SOT23-?(3|5|6|8)',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
-			'(SOT-?227(B|-4)?)|ISOTOP®',
+			'(SOT-?227(B|-4)?)|ISOTOP',
 			// http://www.ferret.com.au/c/richardson-electronics/100v-mosfet-modules-in-sp3-sp4-sp6-packages-n679793 / mosfet modules
 			'SP(1|3|4|6|6-P)',
 			// Clipwatt
@@ -109,7 +113,7 @@ class PackageInfo {
 				'SC67' => 'TO-220F',
 
 				// The SOT-227, or sometimes referred to as the ISOTOP® package
-				'ISOTOP®' => 'SOT-227',
+				'ISOTOP' => 'SOT-227',
 				'SOT227' => 'SOT-227',
 				'SOT227-4' => 'SOT-227',
 				'SOT227B' => 'SOT-227B',

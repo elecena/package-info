@@ -219,6 +219,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '28-QFN (6x6)', 'QFN28' ],
 			[ '20-TSSOP', 'TSSOP20' ],
 			[ '144-LQFP (20x20)', 'LQFP144' ],
+			[ '10-MLF® (3x3)', 'MLF10' ],
+			[ 'NIS5135MN1TXG Kontroler Hot Swap, zasilanie 3.1V do 18V, DFN-10', 'DFN10' ],
+			#[ 'NCP103AMX105TCG Stabilizator napięcia LDO, stały, wejście 1.7V do -5.5V, wyjście 1.05Vnom / 150mA, µDFN-4', 'µDFN4' ], # TODO
 
 			// https://en.wikipedia.org/wiki/DO-204
 			[ 'DO-204AL (DO-41)', 'DO-41' ],
