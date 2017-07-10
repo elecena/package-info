@@ -73,6 +73,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Monitor napięcia, 3.5V-100Vin, MSOP-16', 'MSOP16' ],
 			[ '10-MSOP-EP', 'MSOP10-EP' ],
 			[ '10-MSOP-PowerPad', 'MSOP10-POWERPAD' ],
+			[ 'IC REG LDO 3.3V 1A 8-HTSOP-J', 'HTSOP8-J' ],
+			[ 'Operational Amplifiers - Op Amps TLVx314 3-MHz, Low-Power, Low-Noise, RRIO, CMOS Operational Amplifiers 8-VSSOP -40 to 125', 'VSSOP8' ],
+			[ 'IC DIRECT RAMBUS CLK GEN 24-QSOP', 'QSOP24' ],
 
 			[ 'ATTINY10-TS8R Mikrokontroler AVR; SRAM:32B; Flash:1kB; SOT23-6; Uzas:1,8÷5,5V', 'SOT23-6' ],
 			[ 'MCP3421A0T-E/CH - 18-bitowy przetwornik A/D SMD SOT23-6 PBF', 'SOT23-6' ],

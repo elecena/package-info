@@ -28,7 +28,7 @@ class PackageInfo {
 			'(LF|L|M|P|V|VF)?QFP(N)?-?(100|128|144|176|208|32|44|48|52|64|80)',
 			'DIL-?(8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
-			'([MTS]?SOP?|TSSOP?|SOIC)-?(8|10|12|14|16|18|20|24|28|32|38)(-W|-EP|-POWERPAD)?',
+			'((H|HT|HTS|LS|M|S|T|TS|TV|Q|V|VS)?SOP?|SOIC)-?(4|5|6|8|10|12|14|16|18|20|24|28|30|32|36|38|44|48|54|56)(-J|-W|-EP|-POWERPAD)?',
 			'[CEMP]?DIP-?(6|8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			'[TUVWX]?DFN-?(3|4|6|8|10|12|14|16|20|22)',
 			'HC-?49(-?[US])?',
