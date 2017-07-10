@@ -122,6 +122,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Transceiver, 74LVC8T245, 1.2 V do 5.5 V, DHVQFN-24', 'DHVQFN24' ],
 			[ 'MAX3840ETJ Crosspoint Switch, Dual Interface, 2x2 Array, +3 V to +3.6 V, TQFN-32', 'TQFN32' ],
 			[ 'MAX8662ETM IC POWER MANAGE 48-TQFN-EP', 'TQFN48-EP' ],
+			[ 'LMK03328RHST "Clock Generator, 300 MHz, 3.135 V to 3.465 V, 8 Outputs, WQFN-48', 'WQFN48' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
