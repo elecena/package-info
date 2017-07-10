@@ -88,6 +88,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Pamięć; EEPROM; UNI/O; 128x8bit; 1,8÷5,5V; 100kHz; DIP-8', 'DIP8' ],
 			[ 'Transoptor 4N37 z tranzystorem 1-kanałowy DC DIP 6 Vishay', 'DIP6' ],
 
+			[ 'PIC16C55A-04/SP 8-bit Microcontrollers - MCU .75KB 24 RAM 20 I/O 4MHz SPDIP-28', 'SPDIP28' ],
+			[ 'PIC32MX230F256B-I/SP MCU, 32BIT, PIC32MX, 50MHZ, SDIP-28', 'SDIP28' ],
+			[ 'M50780SP PRODUCENT / MANUFACTURER: MITSUBISHI OBUDOWA / PACKAGE: SDIP-40', 'SDIP40' ],
+			[ 'FOO SDIP-16', false ],
+
 			[ 'Układ scalony MAX7219CNG [DIL-22]', 'DIL22' ],
 			[ 'Mikrokontroler AVR-RISC Atmel ATTINY26-16PU, DIL-20, 0 - 16 MHz Flash: 2 kB, RAM: 128', 'DIL20' ],
 

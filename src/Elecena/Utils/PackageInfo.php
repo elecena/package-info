@@ -30,6 +30,8 @@ class PackageInfo {
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'((H|HT|HTS|LS|M|S|T|TS|TV|Q|V|VS)?SOP?|SOIC)-?(4|5|6|8|10|12|14|16|18|20|24|28|30|32|36|38|44|48|54|56)(-J|-W|-EP|-POWERPAD)?',
 			'[CEMP]?DIP-?(6|8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
+			// Slim plastic dip" (0.3" lead spacing) versus the usual 0.4" spacing used on 28- and 40-pin packages
+			'SP?DIP-?(28|40)',
 			'[TUVWX]?DFN-?(3|4|6|8|10|12|14|16|20|22)',
 			'HC-?49(-?[US])?',
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
