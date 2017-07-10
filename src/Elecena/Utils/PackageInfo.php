@@ -27,7 +27,9 @@ class PackageInfo {
 		$desc = preg_replace('#([A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
 
 		$groups = [
-			'TO-?(111|114|116|126|18|220|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82|92)(SG|F)?',
+			'TO-?(111|114|116|126|18|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82|92)',
+			// https://en.wikipedia.org/wiki/TO-220
+			'I?TO-?220(AB|AC|F|FP|SG)?',
 			'TOP-?(3)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'(LF|L|M|P|V|VF)?QFP(N)?-?(100|128|144|176|208|32|44|48|52|64|80)',

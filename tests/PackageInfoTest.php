@@ -33,6 +33,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '2SA1538 Tranzystor PNP 120V 0,2A 8W 400MHz SOT186', 'TO-220F' ],
 			[ 'TK15A50 500V 15A 0,24R n-mosfet SC67', 'TO-220F' ],
 			[ 'MOSFET,N CHANNEL,600V,3.7A,SC-67', 'TO-220F' ],
+			[ 'Stabilizator napięcia; nieregulowany; 5V; 0,5A; TO220AB; THT', 'TO-220AB' ],
+			[ 'TRIAC 800V 10A TO-220FP', 'TO-220FP' ],
+			[ '7806CV 1,5A TO220(Single Gauge=0.6mm) * Liczba w opakowaniu:50 * Obudowa:TO220SG=0.6mm', 'TO-220SG' ],
+			[ 'DIODE ARRAY SCHOTTKY 45V ITO220', 'ITO-220' ],
 
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO92', 'TO-92' ],
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO-92', 'TO-92' ],
