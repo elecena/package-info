@@ -158,6 +158,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Microprocessor, PowerQUICC II Series, 450 MHz, 1.45 V to 1.6 V, TBGA-480', 'TBGA480' ],
 			[ 'IC SDRAM 8GBIT 1.067GHZ FBGA', false ],
 
+			[ 'AB-RTCMC-32.768KHZ-AIGZ-S7-T IC RTC CLK/CALENDAR I2C 8-CLCC', 'CLCC8' ],
+			[ 'CY25701FLXCT IC OSC XTAL PROG 4-CLCC', 'CLCC4' ],
+			[ 'DS4100H Timer, Oscillator & Pulse Generator IC, Low Jitter HCSL, 100 MHz, 3.135 V to 3.465 V, LCCC-10', 'LCCC10' ],
+			[ 'DAC7725 PLCC-28', 'PLCC28' ],
+
 			// DigiKey normalization
 			[ '8-SON (A) (2.9x2.8)', 'SON8' ],
 			[ '6-SON (1.45x1)', 'SON6' ],

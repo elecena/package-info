@@ -58,6 +58,8 @@ class PackageInfo {
 			'(PG-TD|W|V|X|X2)?SON-?(4|6|8|10)',
 			// Leadframe Chip Scale Package / https://en.wikipedia.org/wiki/Chip-scale_package
 			'(LFCSP|CSP|FCCSP|CSP|WL-CSP)-?(8|10|16|20|24|32|48|64)-?(VQ|WD|WQ)?',
+			// Chip carrier / https://en.wikipedia.org/wiki/Chip_carrier
+			'(BCC|CLCC|LCC|LCCC|DLCC|PLCC)-?(4|6|8|10|20|28|32|44|52|68|84)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
