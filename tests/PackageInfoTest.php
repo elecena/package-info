@@ -69,6 +69,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Nadajnik-odbiornik linii; RS422 / RS485; 5VDC; SO8-W', 'SO8-W' ],
 			[ 'L6386AD (L6386 AD) SO-14', 'SO14' ],
 			[ 'L6386 SMD (SOP-14)', 'SOP14' ],
+			[ 'OP-AMP, DIFFERENTIAL, 350MHZ, 1200V\/us, MSOP-8', 'MSOP8' ],
+			[ 'Monitor napięcia, 3.5V-100Vin, MSOP-16', 'MSOP16' ],
+			[ '10-MSOP-EP', 'MSOP10-EP' ],
+			[ '10-MSOP-PowerPad', 'MSOP10-POWERPAD' ],
 
 			[ 'ATTINY10-TS8R Mikrokontroler AVR; SRAM:32B; Flash:1kB; SOT23-6; Uzas:1,8÷5,5V', 'SOT23-6' ],
 			[ 'MCP3421A0T-E/CH - 18-bitowy przetwornik A/D SMD SOT23-6 PBF', 'SOT23-6' ],
