@@ -58,6 +58,9 @@ class PackageInfo {
 			'TSOT-?5',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
+			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29 / http://www.nxp.com/packages/SOT223
+			'SOT-?223-?(3|4|5|6|8)?',
+			'(SC-?73)|(TO-?261AA)|(SM-?8)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT89-3
 			'SOT?-89-?(3|4|5)?',
 			// http://www.ferret.com.au/c/richardson-electronics/100v-mosfet-modules-in-sp3-sp4-sp6-packages-n679793 / mosfet modules
@@ -133,6 +136,11 @@ class PackageInfo {
 				// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT89-3
 				'SOT89' => 'SOT89-3',
 				'SOT89-4' => 'SOT89-3', // Some call this package a SOT89-4, since it visually appears to have four leads when looking down at the part.
+
+				// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29
+				'SC73' => 'SOT223',
+				'TO-261AA' => 'SOT223',
+				'SM8' => 'SOT223-8',
 
 				// TO-252 is known as DPAK (Decawat Package)
 				// Package can have 3 pins with 90 mils pitch, or 5 pins with 45 mils pitch.

@@ -98,6 +98,14 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'RF Amplifier IC, 21 dB Gain / 4.5 dB Noise, DC to 4 GHz, 5 V supply, SOT-89-4', 'SOT89-3' ],
 			[ 'IC LDO 0.2A LOW DROPOUT SOT-89-5', 'SOT89-5' ],
 
+			[ 'BSP52E6327 INFIN 0205 SOT223', 'SOT223' ],
+			[ 'PNP high-voltage low VCEsat Breakthrough In Small Signal (BISS) transistor in a SOT223 (SC-73) medium power', 'SOT223' ],
+			[ 'Tranzystor NPN 350 V 100 mA 70 MHz HFE 40 TO-261AA BSP19AT1G 3-Pin', 'SOT223' ],
+			[ 'Stabilizator napięcia; nieregulowany; 6V; 3,3V; 500mA; SOT223-5', 'SOT223-5' ],
+			[ 'LDO VOLTAGE REGULATOR, 1.8V, 0.4A, SOT-223-6, FULL REEL', 'SOT223-6' ],
+			[ 'ZXMHC6A07T8TA N & P CHANNEL MOSFET, -60V, SM-8', 'SOT223-8' ],
+			[ 'MOSFET 2N-CH 60V 2A SOT-223-8', 'SOT223-8' ],
+
 			[ 'DIODE AVALANCHE 200V 2A SOD57', 'SOD57' ],
 			[ 'BYD37M PRODUCENT / MANUFACTURER: PHILIPS OBUDOWA / PACKAGE: SOD-87 FAST SOFT-RECOVERY CONTROLLED', 'SOD87' ],
 
