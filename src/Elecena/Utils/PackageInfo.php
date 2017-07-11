@@ -49,7 +49,9 @@ class PackageInfo {
 			'DO-?(7|14|15|16|26|29|34|35|41|201AC|201AD|201AE|204-?AA|204-?AH|204-?AL|205AB|200AA|200AB|((213|214)(AA|AB|AC|BA)))',
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
+			// SOD323 / http://www.nxp.com/packages/SOD323
 			'SOD-?(323|523)F?',
+			'SC-?90',
 			//  Quad Flat No-leads package / https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package#Variants / http://anysilicon.com/ultimate-guide-qfn-package/
 			'(CDFN|DFN|DQFN|DRMLF|LLP|LPCC|MLF|TMLF|MLPD|MLPM|MLPQ|QFN|QFN-TEP|TDFN|TQFN|UQFN|UTDFN|VQFN|WQFN|XDFN|DHVQFN|WDFN|UDFN)-?(4|5|6|8|10|12|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP|S)?',
 			// Quad Flat Package / https://en.wikipedia.org/wiki/Quad_Flat_Package
@@ -83,6 +85,9 @@ class PackageInfo {
 			'(UMAX|USOP)-?(8|10)',
 			// Torex packages / https://www.torexsemi.com/technical-support/packages/
 			'USP(N|Q)?-?(3|4|6|10)(B|B03)?',
+			// SOT-416 (or SOT-523 / SOT-75) / http://www.nxp.com/packages/SOT416.html
+			'SOT-?(416|523)',
+			'SC-?75A?',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -116,9 +121,11 @@ class PackageInfo {
 				'DO-204AL' => 'DO-41',
 				'SOD66' => 'DO-41',
 
+				// general purpose Zener diodes in a SOD323F (SC-90)
+				'SC90' => 'SOD323F',
+
 				// https://en.wikipedia.org/wiki/Small-outline_transistor
 				'SOT323' => 'SOT23-3',
-				'SOT416' => 'SOT23-3',
 				'SOT353' => 'SOT23-5',
 				'SOT363' => 'SOT23-6',
 				'SOT28' => 'SOT23-8',
@@ -158,6 +165,11 @@ class PackageInfo {
 				// ... widely used TO-247 (or TO-3P)
 				'TO-3' => 'TO-247',
 				'TO-3P' => 'TO-247',
+
+				// SOT416: SC-75 / SOT-523
+				'SOT523' => 'SOT416',
+				'SC75' => 'SOT416',
+				'SC75A' => 'SOT416',
 			];
 
 			if (array_key_exists($package, $normalizations)) {

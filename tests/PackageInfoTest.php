@@ -228,6 +228,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
+			[ 'SOD323F (SC-90)', 'SOD323F' ],
+			[ 'BAS21J Dioda przełączająca BAS21J, 2-Pin, SMD, 300V, 250mA, SC-90' , 'SOD323F' ],
 
 			[ 'PWM CONTROLLER, 1KHZ, 26.5V, UMAX-8', 'UMAX8' ],
 			[ 'MAX5703AUB DAC, 8BIT, UMAX-10', 'UMAX10' ],
@@ -241,6 +243,13 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'IC VOLT DET TIME DLY 2.5V 4-USPN', 'USPN4' ],
 			[ 'IC REG LDO 2.5V 0.3A USPQ-4B03', 'USPQ4B03' ],
 			[ 'IC REG BST ADJ 1.2A SYNC USP10B', 'USP10B' ],
+
+			[ 'PMR290UNE N-channel enhancement mode Field-Effect Transistor (FET) in a small SOT416 (SC-75) Surface-Mounted Device (SMD) plastic package using Trench MOSFET', 'SOT416' ],
+			[ 'DAN222T1G Dioda DAN222G 100mA 80V 4ns SOT-416 3-Pin', 'SOT416' ],
+			[ 'TRANS PREBIAS NPN 150MW SOT523', 'SOT416' ],
+			[ '2SA2018TL Tranzystor bipolarny PNP 12 V 500 mA 100 MHz HFE 270 SC-75A 2SA2018TL 3-Pin' ,'SOT416' ],
+			[ 'BC847BTT1G BIPOLAR TRANSISTOR, NPN, 45V, SC-75', 'SOT416' ],
+			[ '2SD2654TLW Tranzystor bipolarny NPN 50 V 150 mA 100 MHz HFE 820 SC-75A 2SD2654TLW 3-Pin', 'SOT416' ],
 
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
