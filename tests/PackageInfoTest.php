@@ -47,6 +47,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO92', 'TO-92' ],
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO-92', 'TO-92' ],
+			[ 'Układ nadzorujący, reset aktywny w stanie niskim, 1V-5.5Vin, TO-92-3', 'TO-92-3' ],
 
 			[ 'Tranzystor: NPN; TO39; bipolarny; 75V; 500mA; 800mW', 'TO-39' ],
 			[ 'TO39; bipolarny; 75V; 500mA; 800mW', 'TO-39' ],
