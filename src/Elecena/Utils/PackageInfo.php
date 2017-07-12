@@ -66,7 +66,7 @@ class PackageInfo {
 			'EMT3F',
 			'SC-?89',
 			'TSOT-?5',
-			'SOT-?(143|343)',
+			'SOT-?(143|343|563|666)',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29 / http://www.nxp.com/packages/SOT223

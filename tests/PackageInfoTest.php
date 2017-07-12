@@ -279,6 +279,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'BC847BTT1G BIPOLAR TRANSISTOR, NPN, 45V, SC-75', 'SOT416' ],
 			[ '2SD2654TLW Tranzystor bipolarny NPN 50 V 150 mA 100 MHz HFE 820 SC-75A 2SD2654TLW 3-Pin', 'SOT416' ],
 
+			[ 'MOSFET N-kanałowy podwójny EM6K7T2R 20 V 200 mA 6-Pin SOT-563 SMD', 'SOT563' ],
+			[ 'MOSFET N-kanałowy podwójny 2N7002PV 60 V 350 mA 6-Pin SOT-666 SMD', 'SOT666' ],
+
 			[ 'rezystor 390k 1% 0207 MMB 0207-50 B2 MELF', 'MELF' ],
 			[ 'rezystor 390k 1% 0207 MMB', 'MELF' ],
 			[ 'DIODE ZENER 4.7V 1W MELF', 'MELF' ],
