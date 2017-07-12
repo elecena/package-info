@@ -137,6 +137,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'PIC32MX230F256B-I/SP MCU, 32BIT, PIC32MX, 50MHZ, SDIP-28', 'SDIP28' ],
 			[ 'M50780SP PRODUCENT / MANUFACTURER: MITSUBISHI OBUDOWA / PACKAGE: SDIP-40', 'SDIP40' ],
 			[ 'FOO SDIP-16', false ],
+			[ 'DIP-10', 'DIP10' ],
+			[ 'DIP 10', 'DIP10' ],
+			[ 'DIP10', 'DIP10' ],
 
 			[ 'Układ scalony MAX7219CNG [DIL-22]', 'DIL22' ],
 			[ 'Mikrokontroler AVR-RISC Atmel ATTINY26-16PU, DIL-20, 0 - 16 MHz Flash: 2 kB, RAM: 128', 'DIL20' ],

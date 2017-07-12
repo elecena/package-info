@@ -26,7 +26,7 @@ class PackageInfo {
 		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
 
 		// DIP 6 -> DIP-6
-		$desc = preg_replace('#(\s[A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
+		$desc = preg_replace('#(\b[A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
 
 		$groups = [
 			'TO-?(111|114|116|126|18|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
