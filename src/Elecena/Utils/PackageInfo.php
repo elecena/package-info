@@ -84,7 +84,7 @@ class PackageInfo {
 			'(BGA|CABGA|CSPBGA|DSBGA|FBGA|FCBGA|FCPBGA|FPBGA|FTBGA|HBGA|PBGA|TBGA|TFBGA|TWBGA|UBGA|VFBGA)-?(4|5|6|48|63|64|90|96|108|113|119|121|132|144|165|191|208|256|324|400|480|484|672|676|780|783|896|900|1152|1156|1517|1704|1760|1932)',
 			// DPAK (TO-252) / https://en.wikipedia.org/wiki/TO-263
 			'(D-?PAK|D2PAK|DDPAK)-?(3|5)?',
-			'TO-?(252|263|263-5)(AB)?',
+			'TO-?(252|252-3|252-5|263|263-5)(AA|AB)?',
 			// SON
 			'(PG-TD|W|V|X|X2)?SON-?(4|6|8|10)',
 			// Leadframe Chip Scale Package / https://en.wikipedia.org/wiki/Chip-scale_package
@@ -183,6 +183,7 @@ class PackageInfo {
 				// Package can have 3 pins with 90 mils pitch, or 5 pins with 45 mils pitch.
 				// @see https://en.wikipedia.org/wiki/TO-252
 				'DPAK' => 'TO-252',
+				'TO-252AA' => 'TO-252',
 
 				// TO-263 is known as DDPAK
 				// @see https://en.wikipedia.org/wiki/TO-263
