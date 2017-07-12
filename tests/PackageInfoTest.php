@@ -283,8 +283,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'rezystor 390k 1% 0207 MMB', 'MELF' ],
 			[ 'DIODE ZENER 4.7V 1W MELF', 'MELF' ],
 			[ 'DIODE GEN 50V 600MA MINI MELF', 'MiniMELF' ],
-			[ 'Rezystor MELF montowany powierzchniowo, 6.8 kohm, 200 V, 250 mW, ± 1%, Seria MMA 0204', 'MELF' ], # TODO: MMA -> MiniMELF
+			[ 'Rezystor MELF montowany powierzchniowo, 68 ohm, 200 V, 400 mW, ± 1%, MMA 0204', 'MELF' ], # TODO: MMA -> MiniMELF
 			[ 'Rezystor seria MMA 0204', 'MiniMELF' ],
+			[ 'Rezystor montowany powierzchniowo, seria MMU 0102, 680 ohm, 100 V, 200 mW, ± 1%', 'MicroMELF' ],
 			[ 'DIODA ZENERA 5,6V 0,5W PHILIPS BZV55 BZV55C5V6 SMD 0204 SOD80C MiniMELF', 'MiniMELF' ],
 			[ 'Seria MMU 0102 RES, MELF, 120R, 1%, 200MW, SMD', 'MicroMELF' ],
 			[ 'Seria MMU 0102 RES, SMD', 'MicroMELF' ],

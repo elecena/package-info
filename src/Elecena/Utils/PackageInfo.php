@@ -25,11 +25,8 @@ class PackageInfo {
 		// "swap" package signatures / 64-LQFP -> LQFP64
 		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
 
-		// DIP 6 -> DIP-6
-		$desc = preg_replace('#(\b[A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
-
-		// clean Melf packages / MMU 0102 -> MMU
-		$desc = preg_replace('#\b(MM(A|B|U))-?\d+#', '$1', $desc);
+		// DIP 6 -> DIP-6 / but do not touch "MMU 0102"
+		$desc = preg_replace('#(\b[A-Z]{2,})\s([1-9]\d?)#', '$1-$2', $desc);
 
 		$groups = [
 			'TO-?(111|114|116|126|18|253|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
