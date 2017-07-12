@@ -28,6 +28,9 @@ class PackageInfo {
 		// DIP 6 -> DIP-6
 		$desc = preg_replace('#(\b[A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
 
+		// clean Melf packages / MMU 0102 -> MMU
+		$desc = preg_replace('#\b(MM(A|B|U))-?\d+#', '$1', $desc);
+
 		$groups = [
 			'TO-?(111|114|116|126|18|253|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
 			// https://en.wikipedia.org/wiki/TO-92
@@ -98,6 +101,9 @@ class PackageInfo {
 			'SC-?75A?',
 			// MinSO [STMicroelectronics] / http://pl.mouser.com/Semiconductors/Amplifier-ICs/Analog-Comparators/_/N-cib1w?P=1z0xw9w&pop=1wwj
 			'MINISO-?(8)',
+			// Melf / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
+			'MM(A|B|U)',
+			'(MICRO|MINI)?(-|\s)?MELF',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -187,6 +193,13 @@ class PackageInfo {
 				'SOT523' => 'SOT416',
 				'SC75' => 'SOT416',
 				'SC75A' => 'SOT416',
+
+				// Melf
+				'MINIMELF' => 'MiniMELF',
+				'MICROMELF' => 'MicroMELF',
+				'MMA' => 'MiniMELF',
+				'MMB' => 'MELF',
+				'MMU' => 'MicroMELF',
 			];
 
 			if (array_key_exists($package, $normalizations)) {

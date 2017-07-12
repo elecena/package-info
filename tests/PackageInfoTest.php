@@ -279,6 +279,17 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'BC847BTT1G BIPOLAR TRANSISTOR, NPN, 45V, SC-75', 'SOT416' ],
 			[ '2SD2654TLW Tranzystor bipolarny NPN 50 V 150 mA 100 MHz HFE 820 SC-75A 2SD2654TLW 3-Pin', 'SOT416' ],
 
+			[ 'rezystor 390k 1% 0207 MMB 0207-50 B2 MELF', 'MELF' ],
+			[ 'rezystor 390k 1% 0207 MMB', 'MELF' ],
+			[ 'DIODE ZENER 4.7V 1W MELF', 'MELF' ],
+			[ 'DIODE GEN 50V 600MA MINI MELF', 'MiniMELF' ],
+			[ 'Rezystor MELF montowany powierzchniowo, 6.8 kohm, 200 V, 250 mW, ± 1%, Seria MMA 0204', 'MELF' ], # TODO: MMA -> MiniMELF
+			[ 'Rezystor seria MMA 0204', 'MiniMELF' ],
+			[ 'DIODA ZENERA 5,6V 0,5W PHILIPS BZV55 BZV55C5V6 SMD 0204 SOD80C MiniMELF', 'MiniMELF' ],
+			[ 'Seria MMU 0102 RES, MELF, 120R, 1%, 200MW, SMD', 'MicroMELF' ],
+			[ 'Seria MMU 0102 RES, SMD', 'MicroMELF' ],
+			[ 'Rezystor SMD 510K 0102 1% MICRO-MELF', 'MicroMELF' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],
