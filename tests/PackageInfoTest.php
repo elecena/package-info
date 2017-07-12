@@ -322,6 +322,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Seria MMU 0102 RES, SMD', 'MicroMELF' ],
 			[ 'Rezystor SMD 510K 0102 1% MICRO-MELF', 'MicroMELF' ],
 
+			[ 'Pojedyncza dioda Zenera, 6.2 V, 500 mW, DO-204AA, 2 piny/-ów, 200 °C', 'DO-7' ],
+			[ 'Dioda prostownicza 1000V/1,5A Obudowa: DO-15 Temperatura: -55/+150°C', 'DO-15' ],
+			[ 'Rectifier, 50V 1A, 2-Pin DO-41', 'DO-41' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],

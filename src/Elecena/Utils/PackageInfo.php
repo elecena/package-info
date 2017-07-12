@@ -26,8 +26,8 @@ class PackageInfo {
 		// "swap" package signatures / 64-LQFP -> LQFP64
 		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
 
-		// DIP 6 -> DIP-6 / but do not touch "MMU 0102"
-		$desc = preg_replace('#(\b[A-Z]{2,})\s([1-9]\d?)#', '$1-$2', $desc);
+		// DIP 6 -> DIP-6
+		$desc = preg_replace('#(\b(DIP))\s([1-9]\d?)#', '$1-$3', $desc);
 
 		$groups = [
 			'TO-?(111|114|116|126|18|253|254|257|262|262AA|268|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
@@ -48,8 +48,10 @@ class PackageInfo {
 			// Slim plastic dip" (0.3" lead spacing) versus the usual 0.4" spacing used on 28- and 40-pin packages
 			'SP?DIP-?(28|40)',
 			'HC-?49(-?[US])?',
+			// DO packages
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
-			'DO-?(7|14|15|16|26|29|34|35|41|201AC|201AD|201AE|204-?AA|204-?AH|204-?AL|205AB|200AA|200AB|((213|214)(AA|AB|AC|BA)))',
+			// $ curl -s 'http://www.topline.tv/DO.html' | grep -oE 'DO-[0-9A-Z]+' | cut -d'-' -f 2 | sort -n | uniq | tr "\n" "|"
+			'DO-?(1|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|41G|42|43|44|45|200AA|200AB|201AA|201AD|201AE|202AA|203AA|203AB|204AA|204AB|204AC|204AD|204AE|204AF|204AG|204AH|204AL|205AA|205AB|208AA|209AA|210AA|211AA|213AA|213AB|214AA|214AB|214AC|214BA|215|215AA|215AB|215AC|216AA|218AB|219|220|241AB|244AC)',
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			// SOD323 / http://www.nxp.com/packages/SOD323
@@ -128,6 +130,8 @@ class PackageInfo {
 
 			/**
 			 * Normalize packages
+			 *
+			 * @see http://www.topline.tv/DO.html
 			 *
 			 * The DO-7 (also known as DO-204-AA)
 			 * The DO-35 (also known as DO-204-AH or SOD27)
