@@ -130,6 +130,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Dioda: drabinka diodowa; 6V; 6A; jednokierunkowa; 150W; SC70-5', 'SOT23-5' ],
 			[ 'Dioda: drabinka diodowa; SC70-6; 150W; 6A; Ubr:6V; Urmax:5V', 'SOT23-6' ],
 
+			[ 'UKŁAD SCALONY AN6165SB SMD SOT24', 'SOT24' ],
+			[ 'Stabilizator MM3291CN SOT-25', 'SOT25' ],
+			[ 'HMC197B GaAs MMIC SOT26 SPDT Switch, DC - 3 GHz', 'SOT26' ],
+			[ 'Diode SOT27', false ],
+
 			[ 'DIODE AVALANCHE 200V 2A SOD57', 'SOD57' ],
 			[ 'BYD37M PRODUCENT / MANUFACTURER: PHILIPS OBUDOWA / PACKAGE: SOD-87 FAST SOFT-RECOVERY CONTROLLED', 'SOD87' ],
 

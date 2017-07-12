@@ -103,6 +103,8 @@ class PackageInfo {
 			// Melf / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
 			'MM(A|B|U)',
 			'(MICRO|MINI)?(-|\s)?MELF',
+			// (S)SOT packages
+			'S?SOT-?(24|25|26)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
