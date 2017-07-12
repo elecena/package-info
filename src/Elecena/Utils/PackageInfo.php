@@ -31,7 +31,7 @@ class PackageInfo {
 		$groups = [
 			'TO-?(111|114|116|126|18|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82|92)',
 			// https://en.wikipedia.org/wiki/TO-220
-			'I?TO-?220(AB|AC|F|FP|SG)?',
+			'I?TO-?220(AB|AC|F|FP|SG|-3|-5)?',
 			'TOP-?(3)',
 			// If more heat needs to be dissipated, devices in the also widely used TO-247 (or TO-3P) package can be selected / TO-3PF variant a slightly lower one
 			'TO-?(247|3|3P|3PF)',
@@ -90,6 +90,8 @@ class PackageInfo {
 			// SOT-416 (or SOT-523 / SOT-75) / http://www.nxp.com/packages/SOT416.html
 			'SOT-?(416|523)',
 			'SC-?75A?',
+			// MinSO [STMicroelectronics] / http://pl.mouser.com/Semiconductors/Amplifier-ICs/Analog-Comparators/_/N-cib1w?P=1z0xw9w&pop=1wwj
+			'MINISO-?(8)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',

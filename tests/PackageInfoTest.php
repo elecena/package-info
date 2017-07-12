@@ -37,6 +37,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TRIAC 800V 10A TO-220FP', 'TO-220FP' ],
 			[ '7806CV 1,5A TO220(Single Gauge=0.6mm) * Liczba w opakowaniu:50 * Obudowa:TO220SG=0.6mm', 'TO-220SG' ],
 			[ 'DIODE ARRAY SCHOTTKY 45V ITO220', 'ITO-220' ],
+			[ 'Tranzystor 2SC5171 NPN, obudowa TO-220-3 Vce - 180V Ic - 2A para komplementarna z tranzystorem 2SA1930', 'TO-220-3' ],
+			[ 'Tranzystor: N-MOSFET; unipolarny; 500V; 8A; 125W; TO220-5', 'TO-220-5' ],
 
 			[ 'Tranzystor PNP 100 V 25 A 3 MHz HFE 10 TO-247 TIP36C 3-Pin', 'TO-247' ],
 			[ 'BU626A TO-3', 'TO-247' ],
@@ -167,10 +169,13 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LMK03328RHST "Clock Generator, 300 MHz, 3.135 V to 3.465 V, 8 Outputs, WQFN-48', 'WQFN48' ],
 			[ 'DSPIC33EP16GS202-I/MX DSC, 16BIT, 16KB, 140MHZ, 3.6V, UQFN-28', 'UQFN28' ],
 
-			# N-pin handling
-			# [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ], # TODO
+			[ 'Battery monitor IC with Coulomb counter/gas gauge, MiniSO-8, STM, RoHS', 'MINISO8' ],
+
+			# TODO: N-pin handling
+			# [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ],
 			# [ 'Wzmacniacz operacyjny LF411CN/NOPB 4MHz MDIP, 8-Pin', 'MDIP8' ],
 			# [ 'Dioda ochronna ESD dwukierunkowa 50V 150W SC70 3-Pin', 'SOT23-3' ],
+			# [ 'Wzmacniacz operacyjny TSV522AIYST, 2,7 → 5,5 V 1.15MHz R-R MiniSO, 8-Pin', 'MINISO8' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
