@@ -92,6 +92,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Układ napięcia odniesienia, precyzyjny, szeregowy - stały, seria LT6656, 5V, TSOT-23-6', 'TSOT23-6' ],
 			[ 'DC-DC Switching Buck Regulator, Adjustable, 4.5 V-18 Vin, 0.6 V-5 V/4 A out, 500 kHz, TSOT-23-8', 'TSOT23-8' ],
 			[ 'IC OPAMP VFB 90MHZ RRO TSOT-5', 'TSOT23-5' ],
+			[ 'IC BUFFER TRI-ST NON-INV SOT353', 'SOT23-5'],
+			[ 'Dioda przełączająca BAV756S, 6-Pin, SMD, 90V, 250mA, 1MHz, -65 → +150°C, SOT-363', 'SOT23-6' ],
 
 			[ 'TRANS NPN 80V 1A SOT-89', 'SOT89-3' ],
 			[ 'MOSFET, N CHANNEL, 300V, 0.2A, SOT-89-3' ,'SOT89-3' ],
@@ -105,6 +107,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LDO VOLTAGE REGULATOR, 1.8V, 0.4A, SOT-223-6, FULL REEL', 'SOT223-6' ],
 			[ 'ZXMHC6A07T8TA N & P CHANNEL MOSFET, -60V, SM-8', 'SOT223-8' ],
 			[ 'MOSFET 2N-CH 60V 2A SOT-223-8', 'SOT223-8' ],
+			[ 'Dioda: prostownicza; SMD; 70V; 200mA; 6ns; 200mW; SC70; Ifsm:500mA', 'SC70' ],
+			[ 'Dioda transil drabinka ESD 5,5V 2A SC70-3' ,'SOT23-3' ],
+			[ 'Dioda: drabinka diodowa; 6V; 6A; jednokierunkowa; 150W; SC70-5', 'SOT23-5' ],
+			[ 'Dioda: drabinka diodowa; SC70-6; 150W; 6A; Ubr:6V; Urmax:5V', 'SOT23-6' ],
 
 			[ 'DIODE AVALANCHE 200V 2A SOD57', 'SOD57' ],
 			[ 'BYD37M PRODUCENT / MANUFACTURER: PHILIPS OBUDOWA / PACKAGE: SOD-87 FAST SOFT-RECOVERY CONTROLLED', 'SOD87' ],
@@ -164,6 +170,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			# N-pin handling
 			# [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ], # TODO
 			# [ 'Wzmacniacz operacyjny LF411CN/NOPB 4MHz MDIP, 8-Pin', 'MDIP8' ],
+			# [ 'Dioda ochronna ESD dwukierunkowa 50V 150W SC70 3-Pin', 'SOT23-3' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],

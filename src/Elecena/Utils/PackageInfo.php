@@ -58,7 +58,8 @@ class PackageInfo {
 			'(BQFP|BQFPH|CQFP|EQFP|FQFP|LQFP|MQFP|NQFP|SQFP|TDFP|TQFP|VQFP|VTQFP|HTQFP)-?(4|5|6|8|10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor / Many manufacturers[1][2] also offer the nearly identical thin small outline transistor (TSOT)
 			'T?SOT-?23-?(3|5|6|8)',
-			'SOT-?323-?(3)?',
+			'SOT-?(323|353|363)-?(3)?',
+			'SC-?70-?(3|4|5|6)?',
 			'TSOT-?5',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
@@ -131,6 +132,9 @@ class PackageInfo {
 				'SOT363' => 'SOT23-6',
 				'SOT28' => 'SOT23-8',
 				'TSOT5' => 'TSOT23-5',
+				'SC70-3' => 'SOT23-3',
+				'SC70-5' => 'SOT23-5',
+				'SC70-6' => 'SOT23-6',
 
 				// TO-220F also known as the SOT186 and SC67 is TO-220 like package, where the heatsink mounting tab has been encased in the plastic
 				'SOT186' => 'TO-220F',
