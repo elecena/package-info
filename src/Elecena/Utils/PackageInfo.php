@@ -9,6 +9,7 @@ namespace Elecena\Utils;
  * @see http://www.interfacebus.com/semiconductor-transistor-packages.html
  * @see https://www.torexsemi.com/technical-support/packages/
  * @see http://www.marsport.org.uk/smd/package%20equivalents.htm
+ * @see http://www.topline.tv/Pin-Count.html
  */
 class PackageInfo {
 
