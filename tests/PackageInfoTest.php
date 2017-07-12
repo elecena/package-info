@@ -124,6 +124,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'MOSFET 2N-CH 60V 2A SOT-223-8', 'SOT223-8' ],
 			[ 'Dioda: prostownicza; SMD; 70V; 200mA; 6ns; 200mW; SC70; Ifsm:500mA', 'SC70' ],
 			[ 'Dioda transil drabinka ESD 5,5V 2A SC70-3' ,'SOT23-3' ],
+			[ 'MOSFET Pch Power MOS FET SC-59A/TO-236AA', 'SOT23-3' ],
+			[ 'MOS FET SC-59A', 'SOT23-3' ],
+			[ 'MOSFET TO236AA', 'SOT23-3' ],
 			[ 'Dioda: drabinka diodowa; 6V; 6A; jednokierunkowa; 150W; SC70-5', 'SOT23-5' ],
 			[ 'Dioda: drabinka diodowa; SC70-6; 150W; 6A; Ubr:6V; Urmax:5V', 'SOT23-6' ],
 

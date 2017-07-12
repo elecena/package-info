@@ -53,13 +53,14 @@ class PackageInfo {
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			// SOD323 / http://www.nxp.com/packages/SOD323
 			'SOD-?(323|523)F?',
-			'SC-?90',
+			'SC-?(90|59A)',
+			'TO-?236AA',
 			//  Quad Flat No-leads package / https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package#Variants / http://anysilicon.com/ultimate-guide-qfn-package/
 			'(CDFN|DFN|DQFN|DRMLF|LLP|LPCC|MLF|TMLF|MLPD|MLPM|MLPQ|QFN|QFN-TEP|TDFN|TQFN|UQFN|UTDFN|VQFN|WQFN|XDFN|DHVQFN|WDFN|UDFN)-?(4|5|6|8|10|12|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)-?(EP|S)?',
 			// Quad Flat Package / https://en.wikipedia.org/wiki/Quad_Flat_Package
 			'(BQFP|BQFPH|CQFP|EQFP|FQFP|LQFP|MQFP|NQFP|SQFP|TDFP|TQFP|VQFP|VTQFP|HTQFP)-?(4|5|6|8|10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor / Many manufacturers[1][2] also offer the nearly identical thin small outline transistor (TSOT)
-			'T?SOT-?23-?(3|5|6|8)',
+			'T?SOT-?23-?(3|5|6|8)?',
 			'SOT-?(323|353|363)-?(3)?',
 			'SC-?70-?(3|4|5|6)?',
 			'SOT-?(490|416FL)',
@@ -138,7 +139,10 @@ class PackageInfo {
 				'SC90' => 'SOD323F',
 
 				// https://en.wikipedia.org/wiki/Small-outline_transistor
+				'SOT23' => 'SOT23-3',
 				'SOT323' => 'SOT23-3',
+				'TO-236AA' => 'SOT23-3',
+				'SC59A' => 'SOT23-3',
 				'SOT353' => 'SOT23-5',
 				'SOT363' => 'SOT23-6',
 				'SOT28' => 'SOT23-8',
