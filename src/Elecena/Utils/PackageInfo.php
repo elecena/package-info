@@ -26,7 +26,7 @@ class PackageInfo {
 		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
 
 		// DIP 6 -> DIP-6
-		$desc = preg_replace('#([A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
+		$desc = preg_replace('#(\s[A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
 
 		$groups = [
 			'TO-?(111|114|116|126|18|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
@@ -62,6 +62,9 @@ class PackageInfo {
 			'T?SOT-?23-?(3|5|6|8)',
 			'SOT-?(323|353|363)-?(3)?',
 			'SC-?70-?(3|4|5|6)?',
+			'SOT-?(490|416FL)',
+			'EMT3F',
+			'SC-?89',
 			'TSOT-?5',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
@@ -139,6 +142,9 @@ class PackageInfo {
 				'SC70-3' => 'SOT23-3',
 				'SC70-5' => 'SOT23-5',
 				'SC70-6' => 'SOT23-6',
+				'SC89' => 'SOT490',
+				'SOT416FL' => 'SOT490',
+				'EMT3F' => 'SOT490',
 
 				// TO-220F also known as the SOT186 and SC67 is TO-220 like package, where the heatsink mounting tab has been encased in the plastic
 				'SOT186' => 'TO-220F',

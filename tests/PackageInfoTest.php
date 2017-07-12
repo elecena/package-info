@@ -68,6 +68,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'ISOTOP®', 'SOT-227' ],
 			[ 'SOT-227-4 N-Channel 600 V MOSFET', 'SOT-227' ],
 
+			[ 'Dioda Schottky dual 30V 0,07A 0,8ns 0,55V CA/C SOT490', 'SOT490' ],
+			[ 'TRANS PREBIAS NPN 50V 0.15W SC89', 'SOT490' ],
+			[ 'TRANS PREBIAS NPN 50V EMT3F', 'SOT490' ],
+			[ 'Tranzystor PNP -50 V 100 mA 100 MHz HFE 120 SOT-416FL 2SAR523EBTL 3-Pin', 'SOT490' ],
+
 			[ 'Pamięć; EEPROM; I2C; 128x8bit; 1,8÷5,5V; 400kHz; DFN8', 'DFN8' ],
 
 			[ 'Pamięć; EEPROM; UNI/O; 256x8bit; 1,8÷5,5V; 100kHz; MSOP8', 'MSOP8' ],
