@@ -29,7 +29,7 @@ class PackageInfo {
 		$desc = preg_replace('#(\b[A-Z]{2,})\s(\d+)#', '$1-$2', $desc);
 
 		$groups = [
-			'TO-?(111|114|116|126|18|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
+			'TO-?(111|114|116|126|18|253|254|257|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
 			// https://en.wikipedia.org/wiki/TO-92
 			'TO-?92(-3)?',
 			// https://en.wikipedia.org/wiki/TO-220
@@ -66,6 +66,7 @@ class PackageInfo {
 			'EMT3F',
 			'SC-?89',
 			'TSOT-?5',
+			'SOT-?(143|343)',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29 / http://www.nxp.com/packages/SOT223
@@ -145,6 +146,7 @@ class PackageInfo {
 				'SC89' => 'SOT490',
 				'SOT416FL' => 'SOT490',
 				'EMT3F' => 'SOT490',
+				'TO-253' => 'SOT143',
 
 				// TO-220F also known as the SOT186 and SC67 is TO-220 like package, where the heatsink mounting tab has been encased in the plastic
 				'SOT186' => 'TO-220F',

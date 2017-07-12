@@ -73,6 +73,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TRANS PREBIAS NPN 50V EMT3F', 'SOT490' ],
 			[ 'Tranzystor PNP -50 V 100 mA 100 MHz HFE 120 SOT-416FL 2SAR523EBTL 3-Pin', 'SOT490' ],
 
+			[ 'Tranzystor dual NPN 30V 0,1A 0,25W 100MHz SOT143' ,'SOT143' ],
+			[ 'Dioda prostownicza, Jedna, 80 V, 100 mA, TO-253, 1.2 V, 4 piny/-ów', 'SOT143' ],
+			[ 'TRANS RF NPN 12V 80MA SOT343', 'SOT343' ],
+
 			[ 'Pamięć; EEPROM; I2C; 128x8bit; 1,8÷5,5V; 400kHz; DFN8', 'DFN8' ],
 
 			[ 'Pamięć; EEPROM; UNI/O; 256x8bit; 1,8÷5,5V; 100kHz; MSOP8', 'MSOP8' ],
