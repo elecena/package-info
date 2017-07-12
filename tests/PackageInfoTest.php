@@ -276,6 +276,12 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'MOSFET P-kanałowy IRF4905LPBF 55 V 74 A 3-Pin TO-262', 'TO-262' ],
 			[ 'DIODE SCHOTTKY 10A 60V TO-262AA', 'TO-262AA' ],
 
+			[ 'MOSFET N-CH 1000V 20A TO-268', 'TO-268' ],
+
+			[ 'DIODE SCHOTTKY 200V 10A TO277', 'TO-277' ],
+			[ 'Schottky Diodes & Rectifiers 100V 8A Single Die SMPC (TO-277A)', 'TO-277A' ],
+			[ 'AU2PJHM3_A/I Rectifiers 2A,600V, SMPC,FER, Avalanche SM', 'TO-277A' ],
+
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
 			[ 'SOD323F (SC-90)', 'SOD323F' ],
