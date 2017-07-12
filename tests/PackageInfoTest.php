@@ -273,6 +273,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'DIODE, 10A, 50V, TO-263AB', 'TO-263AB' ],
 			[ 'STEP-DOWN REGULATOR, TO-263-5', 'TO-263-5' ],
 
+			[ 'MOSFET P-kanałowy IRF4905LPBF 55 V 74 A 3-Pin TO-262', 'TO-262' ],
+			[ 'DIODE SCHOTTKY 10A 60V TO-262AA', 'TO-262AA' ],
+
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
 			[ 'SOD323F (SC-90)', 'SOD323F' ],
