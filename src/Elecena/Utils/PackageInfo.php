@@ -103,8 +103,9 @@ class PackageInfo {
 			// Melf / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
 			'MM(A|B|U)',
 			'(MICRO|MINI)?(-|\s)?MELF',
-			// (S)SOT packages
-			'S?SOT-?(24|25|26)',
+			// (S)SOT packages / http://www.marsport.org.uk/smd/package%20equivalents.htm
+			'S?SOT-?(24|25|26|457)',
+			'SMQ|SM6|SMV|SC-?74',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -157,6 +158,7 @@ class PackageInfo {
 				'SOT416FL' => 'SOT490',
 				'EMT3F' => 'SOT490',
 				'TO-253' => 'SOT143',
+				'SMQ' => 'SOT24',
 
 				// TO-220F also known as the SOT186 and SC67 is TO-220 like package, where the heatsink mounting tab has been encased in the plastic
 				'SOT186' => 'TO-220F',
@@ -197,6 +199,10 @@ class PackageInfo {
 				'SOT523' => 'SOT416',
 				'SC75' => 'SOT416',
 				'SC75A' => 'SOT416',
+
+				'SMV' => 'SOT25',
+				'SM6' => 'SOT26',
+				'SC74' => 'SOT457',
 
 				// Melf
 				'MINIMELF' => 'MiniMELF',

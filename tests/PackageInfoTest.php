@@ -131,9 +131,16 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Dioda: drabinka diodowa; SC70-6; 150W; 6A; Ubr:6V; Urmax:5V', 'SOT23-6' ],
 
 			[ 'UKŁAD SCALONY AN6165SB SMD SOT24', 'SOT24' ],
+			[ 'TRANS RF NPN 12V 1MHZ SMQ', 'SOT24' ],
 			[ 'Stabilizator MM3291CN SOT-25', 'SOT25' ],
+			[ 'TRANS 2PNP PREBIAS 0.3W SMV', 'SOT25' ],
 			[ 'HMC197B GaAs MMIC SOT26 SPDT Switch, DC - 3 GHz', 'SOT26' ],
+			[ 'TRANS 2NPN PREBIAS 0.3W SM6', 'SOT26' ],
 			[ 'Diode SOT27', false ],
+
+			[ 'Sieć tranzystorów bipolarnych, NPN, 50 V, 300 mW, 100 mA, 30 hFE, SOT-457', 'SOT457' ],
+			[ 'Tranzystor: NPN / PNP; bipolarny; komplementarne; 80V; 500mA; SC74', 'SOT457' ],
+			[ 'TRANSISTOR DUAL, 50V, PNP/PNP, SC-74', 'SOT457' ],
 
 			[ 'DIODE AVALANCHE 200V 2A SOD57', 'SOD57' ],
 			[ 'BYD37M PRODUCENT / MANUFACTURER: PHILIPS OBUDOWA / PACKAGE: SOD-87 FAST SOFT-RECOVERY CONTROLLED', 'SOD87' ],
