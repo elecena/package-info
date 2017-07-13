@@ -24,6 +24,9 @@ class PackageInfo {
 		// remove noise
 		$desc = strtr($desc, '®', ' ');
 
+		// 24 ld QFN -> 24-QFN
+		$desc = preg_replace('#(\d+) LD ([A-Z]+)#', '$1-$2', $desc);
+
 		// "swap" package signatures / 64-LQFP -> LQFP64
 		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
 
