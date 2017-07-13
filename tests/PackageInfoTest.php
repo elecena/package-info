@@ -50,6 +50,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO92', 'TO-92' ],
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO-92', 'TO-92' ],
+			[ '2SJ74 (TO-92)', 'TO-92' ],
 			[ 'Układ nadzorujący, reset aktywny w stanie niskim, 1V-5.5Vin, TO-92-3', 'TO-92-3' ],
 
 			[ 'Tranzystor: NPN; TO39; bipolarny; 75V; 500mA; 800mW', 'TO-39' ],
@@ -326,6 +327,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Dioda prostownicza 1000V/1,5A Obudowa: DO-15 Temperatura: -55/+150°C', 'DO-15' ],
 			[ 'Rectifier, 50V 1A, 2-Pin DO-41', 'DO-41' ],
 			[ 'DIODE SCHOTTKY 1A 30V DO220AA', 'DO-220AA' ],
+			[ '1N5408 - Dioda prostownicza 3A 1000V DO201AD', 'DO-201AD' ],
+			[ '1N5408 Dioda prostownicza 1000V/3A Obudowa: DO-27 = DO-201AD Temperatura: -55/+150°C', 'DO-27' ],
 
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
