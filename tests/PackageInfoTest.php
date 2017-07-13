@@ -363,6 +363,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'SOD27', 'DO-35' ],
 			[ 'DO-204AL', 'DO-41' ],
 			[ 'SOD66', 'DO-41' ],
+
+			// Analog Devices
+			[ '24 ld QFN (4x4mm w/2.8mm ep)', 'QFN24' ],
+			[ '80 ld LQFP (12x12x1.4mm)', 'LQFP80' ],
 		];
 	}
 }
