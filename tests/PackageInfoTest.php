@@ -264,6 +264,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TO-252, (D-Pak)', 'TO-252' ],
 			[ 'D-Pak', 'TO-252' ],
 			[ 'DPAK', 'TO-252' ],
+			[ 'IRL3803S smd * Liczba w opakowaniu:50 * Liczba w opakowaniu:100 * Obudowa:TO263 (D2PAK) * Obudowa:TO263t/r (D2PAK)', 'TO-263' ],
 			[ 'Liniowy stabilizator napięcia, 7808, stały, wejście 35V, wyjście 8V i 0.5A, TO-252-3', 'TO-252-3' ],
 			[ 'Liniowy stabilizator TO-252-4', false ],
 			[ 'Stabilizator napięcia LDO, stały, wejście 5.5 V do 42 V, drop 250 mV, wyjście 5 V i 450 mA, TO-252-5', 'TO-252-5' ],
