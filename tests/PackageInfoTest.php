@@ -208,6 +208,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			# [ 'Wzmacniacz operacyjny LF411CN/NOPB 4MHz MDIP, 8-Pin', 'MDIP8' ],
 			# [ 'Dioda ochronna ESD dwukierunkowa 50V 150W SC70 3-Pin', 'SOT23-3' ],
 			# [ 'Wzmacniacz operacyjny TSV522AIYST, 2,7 → 5,5 V 1.15MHz R-R MiniSO, 8-Pin', 'MINISO8' ],
+			# [ 'Transoptor, Wyjście tranzystorowe, 1 kanał, DIP, 4 piny/-ów, 60 mA, 5 kV, 100 %', 'DIP4' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
