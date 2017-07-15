@@ -43,6 +43,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Tranzystor PNP 100 V 25 A 3 MHz HFE 10 TO-247 TIP36C 3-Pin', 'TO-247' ],
 			[ 'BU626A TO-3', 'TO-247' ],
 			[ 'Dioda FYA3010DNTU 30A 100V TO-3P 3-Pin', 'TO-247' ],
+			[ '2SC-3421 NPN 1A/120V/10W SOT-429 TRANZYS', 'TO-247' ],
 			[ 'TRANS NPN DARL 400V 15A TO-247-3', 'TO-247-3' ],
 			[ 'TRANSISTOR, BIPOLAR, NPN, 600V, 96A, TO-247AC', 'TO-247AC' ],
 			[ 'DIODE SCHOTTKY 40A 200V TO-247AD', 'TO-247AD' ],
