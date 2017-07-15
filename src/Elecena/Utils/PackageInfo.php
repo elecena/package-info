@@ -78,6 +78,9 @@ class PackageInfo {
 			'TSOT-?5',
 			'SOT-?(143|343|563|666)',
 			'TO-?253',
+			// http://www.smdmark.com/en-US/ic-201725.html
+			'T-?63',
+
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29 / http://www.nxp.com/packages/SOT223
@@ -185,6 +188,9 @@ class PackageInfo {
 				'SOT227' => 'SOT-227',
 				'SOT227-4' => 'SOT-227',
 				'SOT227B' => 'SOT-227B',
+
+				// http://www.smdmark.com/en-US/ic-201725.html
+				'T63' => 'SOT-23',
 
 				// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT89-3
 				'SOT89' => 'SOT89-3',
