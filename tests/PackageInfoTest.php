@@ -61,6 +61,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'BC107B TO-18', 'TO-18' ],
 			[ 'BC107 TO-18 NPN 100mA 45V 300mW', 'TO-18' ],
 
+			[ 'Tyrystor; 50RIA120M; 50A; 1200V; TO65 M6; przewlekany (THT); 200mA; Greegoo; RoHS', 'TO-65' ],
+
+			[ 'Wzmacniacz operacyjny OPA128LM 1MHz TO-99, 8-Pin', 'TO-99' ],
+
 			[ 'BTA26-600BRG TRIAC 600V 25A TOP3', 'TOP3' ],
 			[ '2SK2370 NEC MOSFET 500V 20A TOP-3 TRANSISTOR', 'TOP3' ],
 

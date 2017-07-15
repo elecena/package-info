@@ -10,6 +10,7 @@ namespace Elecena\Utils;
  * @see https://www.torexsemi.com/technical-support/packages/
  * @see http://www.marsport.org.uk/smd/package%20equivalents.htm
  * @see http://www.topline.tv/Pin-Count.html
+ * @see http://www.icpackage.org/
  */
 class PackageInfo {
 
@@ -34,7 +35,7 @@ class PackageInfo {
 		$desc = preg_replace('#(\b(DIP))\s([1-9]\d?)#', '$1-$3', $desc);
 
 		$groups = [
-			'TO-?(111|114|116|126|18|253|254|257|262|262AA|268|3|39|46|5|53|59|60|61|63|66|72|78|8|82)',
+			'TO-?(1|2|3|5|6|7|8|9|10|11|12|13|17|18|22|23|24|25|32|33|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|55|57|58|59|60|61|62|63|64|65|66|67|70|71|72|73|74|75|76|77|78|79|80|81|82|83|93|94|98|99|100|102|103|104|105|106|107|108|109|111|119|120|121|122|123|124|126|127|128|129|130|131|132|201|202|204|205|206|206AA|208|213AA|218|226|248|249|254|255|257|258|259|264|268|276)',
 			// https://en.wikipedia.org/wiki/TO-92
 			'TO-?92(-3)?',
 			// https://en.wikipedia.org/wiki/TO-220
@@ -76,6 +77,7 @@ class PackageInfo {
 			'SC-?89',
 			'TSOT-?5',
 			'SOT-?(143|343|563|666)',
+			'TO-?253',
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29 / http://www.nxp.com/packages/SOT223
@@ -116,6 +118,8 @@ class PackageInfo {
 			// TO-277 (Z3) / TO-277A (SMPC)
 			'TO-?277A?',
 			'Z3|SMPC',
+			// TO-262
+			'TO-?262(AA)?',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
