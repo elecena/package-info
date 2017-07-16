@@ -53,7 +53,7 @@ class PackageInfo {
 			'(CERDIP|CDIP|PDIP|DIP|MDIP|EDIP)-?(6|8|10|12|14|16|18|20|22|24|28|32|36|40|42|48|64)',
 			// Slim plastic dip" (0.3" lead spacing) versus the usual 0.4" spacing used on 28- and 40-pin packages
 			'SP?DIP-?(28|40)',
-			'HC-?49(-?[US])?',
+			'HC-?49([/-]?[US])?',
 			// DO packages
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
 			// $ curl -s 'http://www.topline.tv/DO.html' | grep -oE 'DO-[0-9A-Z]+' | cut -d'-' -f 2 | sort -n | uniq | tr "\n" "|"
@@ -137,6 +137,7 @@ class PackageInfo {
 			$package = $matches[2];
 
 			$package = str_replace(' ', '', $package); # remove spaces in 'CLIPWATT 19' => 'CLIPWATT19'
+			$package = str_replace('/', '', $package); # remove slashes in HC49/U
 			$package = preg_replace('#([A-Z])-([A-Z\d]+)#', '$1$2', $package); # remove dash in DIL-14 -> "DIL14"
 			$package = preg_replace('#(TO|DO|CLIPWATT)(\d+)#', '$1-$2', $package); # add dash to TO92, DO-14 and CLIPWATT19 -> "TO-92"
 

@@ -179,9 +179,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Mikrokontroler ARM; Flash:64kB; SRAM:16kB; 48MHz; PG-LQFP-64', 'LQFP64' ],
 
 			[ 'Kwarc, rezonator kwarcowy 49,95416MHz [HC-49U]', 'HC49U' ],
+			[ '40.00 MHZ Rezonator: kwarcowy; 40MHz; 30ppm; 16pF÷30pF; THT; HC49/U 100ST 100', 'HC49U' ],
 			[ 'Rezonator: kwarcowy; 12MHz; ±30ppm; 30pF; THT; HC49-S', 'HC49-S' ],
 			[ 'Rezonator: kwarcowy; 12MHz; ±30ppm; 30pF; THT; HC49-S', 'HC49-S' ],
-			[ 'Rezonator: kwarcowy; 12,288MHz; ±30ppm; 16pF÷30pF; THT; HC49/U', 'HC49' ],
+			[ 'Rezonator: kwarcowy; 12,288MHz; ±30ppm; 16pF÷30pF; THT; HC49/U', 'HC49U' ],
 			[ 'Rezonator kwarcowy 16MHz - HC49 - niski', 'HC49' ],
 			[ 'HC49/4HSMX 30/50/20/18 30 MHZ - Kryształ, 30 MHz, SMD, 11.4mm x 4.9mm, 50 ppm, 18 pF, 30 ppm, Seria HC-49/4HSMX', 'HC49' ],
 
