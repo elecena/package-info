@@ -29,7 +29,7 @@ class PackageInfo {
 		$desc = preg_replace('#(\d+) LD ([A-Z]+)#', '$1-$2', $desc);
 
 		// "swap" package signatures / 64-LQFP -> LQFP64
-		$desc = preg_replace('#(\d{1,})-([2A-Z]{2,})#', '$2$1', $desc);
+		$desc = preg_replace('#(\d{1,})-\s?([2A-Z]{2,})#', '$2$1', $desc);
 
 		// DIP 6 -> DIP-6
 		$desc = preg_replace('#(\b(DIP))\s([1-9]\d?)#', '$1-$3', $desc);
@@ -123,6 +123,8 @@ class PackageInfo {
 			'Z3|SMPC',
 			// TO-262
 			'TO-?262(AA)?',
+			// SILP package / https://sites.google.com/site/nhecomponents/components-index/integrated-circuits/la-series
+			'SILP-?(7|9|10|11|12|13|14|15|16|18|23|25|30)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',

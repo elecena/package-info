@@ -342,6 +342,12 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '1N5408 - Dioda prostownicza 3A 1000V DO201AD', 'DO-201AD' ],
 			[ '1N5408 Dioda prostownicza 1000V/3A Obudowa: DO-27 = DO-201AD Temperatura: -55/+150°C', 'DO-27' ],
 
+			[ 'BA-4908 SILP-12 UKŁAD', 'SILP12' ],
+			[ 'LA-7830=LA-7832 SILP-7 UKŁAD', 'SILP7' ],
+			[ 'LA-4280= ( BRAK ) 2x AF- OS 32V 4A 2X10W (32V/ 8Ohm ) ( 14- SILP )', 'SILP14' ],
+			[ 'TDA-1562-Q SILP-16 UKŁAD', 'SILP16' ],
+			[ 'LA-5609 SILP-18 UKŁAD', 'SILP18' ],
+
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
 			[ 'Tranzystor: NPN; TO3954; bipolarny; 75V; 500mA; 800mW', false ],
