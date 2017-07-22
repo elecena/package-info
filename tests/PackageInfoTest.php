@@ -48,6 +48,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TRANSISTOR, BIPOLAR, NPN, 600V, 96A, TO-247AC', 'TO-247AC' ],
 			[ 'DIODE SCHOTTKY 40A 200V TO-247AD', 'TO-247AD' ],
 			[ 'IGBT 600V 24A 54W TO-3PF', 'TO-3PF' ],
+			[ '2SK2313 TOSHIBA K2313 Transistor MOSFET N-CH 60V 60A TO-3PN', 'TO-3PN' ],
+			[ 'IRFP460C Tranzystor 235W TO-3PN N-Channel', 'TO-3PN' ],
 
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO92', 'TO-92' ],
 			[ 'Tranzystor: NPN; bipolarny; 60V; 600mA; 350mW; TO-92', 'TO-92' ],

@@ -42,7 +42,8 @@ class PackageInfo {
 			'I?TO-?220(AB|AC|F|FP|SG|-3|-5)?',
 			'TOP-?(3)',
 			// If more heat needs to be dissipated, devices in the also widely used TO-247 (or TO-3P) package can be selected / TO-3PF variant a slightly lower one / SOT429: TO-247
-			'TO-?(247(AC|AD|-3)?|3|3P|3PF)',
+			// TO-3PN - https://easyeda.com/teeler123/component/TO_3PN-89Fb5nhzt
+			'TO-?(247(AC|AD|-3)?|3|3P|3PF|3PN)',
 			'SOT-?429',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'(LF|L|M|P|V|VF)?QFP(N)?-?(100|128|144|176|208|32|44|48|52|64|80)',
