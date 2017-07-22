@@ -177,6 +177,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ 'Układ scalony MAX7219CNG [DIL-22]', 'DIL22' ],
 			[ 'Mikrokontroler AVR-RISC Atmel ATTINY26-16PU, DIL-20, 0 - 16 MHz Flash: 2 kB, RAM: 128', 'DIL20' ],
+			[ 'Atmega16A-PU DIP40', 'DIP40' ],
 
 			[ 'Mikrokontroler ARM; Flash:64kB; SRAM:16kB; 48MHz; PG-LQFP-64', 'LQFP64' ],
 
@@ -349,6 +350,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LA-4280= ( BRAK ) 2x AF- OS 32V 4A 2X10W (32V/ 8Ohm ) ( 14- SILP )', 'SILP14' ],
 			[ 'TDA-1562-Q SILP-16 UKŁAD', 'SILP16' ],
 			[ 'LA-5609 SILP-18 UKŁAD', 'SILP18' ],
+
+			// ZIP - https://en.wikipedia.org/wiki/Zig-zag_in-line_package
+			# [ 'VIPER50A-E STM Current Mode Controller 700V 1.5A  PENTAWATT VIPER50A', 'PENTAWATT' ], # TODO
 
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
