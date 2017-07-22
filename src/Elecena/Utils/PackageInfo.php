@@ -7,10 +7,14 @@ namespace Elecena\Utils;
  *
  * @see http://www.intersil.com/en/support/packaginginfo.html
  * @see http://www.interfacebus.com/semiconductor-transistor-packages.html
+ * @see http://www.interfacebus.com/Design_Pack_types.html
  * @see https://www.torexsemi.com/technical-support/packages/
  * @see http://www.marsport.org.uk/smd/package%20equivalents.htm
  * @see http://www.topline.tv/Pin-Count.html
  * @see http://www.icpackage.org/
+ * @see https://learn.sparkfun.com/tutorials/integrated-circuits/ic-packages
+ * @see https://en.wikipedia.org/wiki/List_of_integrated_circuit_packaging_types
+ * @see https://www.snapeda.com/discover/
  */
 class PackageInfo {
 
@@ -126,6 +130,12 @@ class PackageInfo {
 			'TO-?262(AA)?',
 			// SILP package / https://sites.google.com/site/nhecomponents/components-index/integrated-circuits/la-series
 			'SILP-?(7|9|10|11|12|13|14|15|16|18|23|25|30)',
+			// ZIP - Zig-zag in-line package
+			'ZIP-?(5|9|20|24|40)',
+			// Pentawatt / https://easyeda.com/antonellapuricelli99/component/Pentawatt_V-GEZvN5nFz & https://easyeda.com/Junikos/component/PENTAWATT-lHBTNHYgy
+			// http://www.marcospecialties.com/pinball-parts/VN02N
+			// TO-220-5 / https://github.com/KiCad/TO_SOT_Packages_THT.pretty/blob/master/TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1.kicad_mod
+			'PENTAWATT(-V)?',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -241,6 +251,10 @@ class PackageInfo {
 				'MMA' => 'MiniMELF',
 				'MMB' => 'MELF',
 				'MMU' => 'MicroMELF',
+
+				// Pentawatt
+				'PENTAWATTV' => 'PENTAWATT-V',
+				'TO-220-5' => 'PENTAWATT',
 			];
 
 			if (array_key_exists($package, $normalizations)) {

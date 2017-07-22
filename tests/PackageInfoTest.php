@@ -38,7 +38,6 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '7806CV 1,5A TO220(Single Gauge=0.6mm) * Liczba w opakowaniu:50 * Obudowa:TO220SG=0.6mm', 'TO-220SG' ],
 			[ 'DIODE ARRAY SCHOTTKY 45V ITO220', 'ITO-220' ],
 			[ 'Tranzystor 2SC5171 NPN, obudowa TO-220-3 Vce - 180V Ic - 2A para komplementarna z tranzystorem 2SA1930', 'TO-220-3' ],
-			[ 'Tranzystor: N-MOSFET; unipolarny; 500V; 8A; 125W; TO220-5', 'TO-220-5' ],
 
 			[ 'Tranzystor PNP 100 V 25 A 3 MHz HFE 10 TO-247 TIP36C 3-Pin', 'TO-247' ],
 			[ 'BU626A TO-3', 'TO-247' ],
@@ -351,8 +350,27 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TDA-1562-Q SILP-16 UKŁAD', 'SILP16' ],
 			[ 'LA-5609 SILP-18 UKŁAD', 'SILP18' ],
 
-			// ZIP - https://en.wikipedia.org/wiki/Zig-zag_in-line_package
-			# [ 'VIPER50A-E STM Current Mode Controller 700V 1.5A  PENTAWATT VIPER50A', 'PENTAWATT' ], # TODO
+			// ZIP - http://www.interfacebus.com/ic-package-zig-zag-drawing.html
+			[ 'układ TC514256Z-10 DRAM 256kx4 ZIP-20 TOSHIBA', 'ZIP20' ],
+			[ 'układ M5M4C256L12 ZIP-24 DRAM 64Kx4 MITSUBISHI', 'ZIP24' ],
+			[ 'TDA6101Q ZIP-9 PHI L=22', 'ZIP9' ],
+			[ 'STR5412 * Liczba w opakowaniu:25 * Obudowa:ZIP-5', 'ZIP5' ],
+			[ 'układ M5M41000AL10 DRAM 1Mx1 ZIP-20 MITSUBISHI', 'ZIP20' ],
+			[ 'UKŁAD SCALONY AN8028 ZIP-9 PIN', 'ZIP9' ],
+			[ 'L2724-W99EM0049 Encapsulation:ZIP-9,Lowdrop Dual Power OP AMP IC NEW', 'ZIP9' ],
+			[ 'STR5412 * Liczba w opakowaniu:25 * Obudowa:ZIP-5', 'ZIP5' ],
+
+			// Pentawatt
+			[ 'VIPER50A-E STM Current Mode Controller 700V 1.5A  PENTAWATT VIPER50A', 'PENTAWATT' ],
+			[ 'VIPER20 PENTAWATT HV 5PIN VIPER20A', 'PENTAWATT' ],
+			[ 'Liniowy regulator napięcia L200CV 2A Z regulacją 2,85 → 36 V, 5-Pin PENTAWATT', 'PENTAWATT' ],
+			[ 'VIPER100 PENTAWATT HV 5PIN 100W SMART HV5 620V 3A', 'PENTAWATT' ],
+			[ 'Tranzystor: N-MOSFET; unipolarny; 500V; 8A; 125W; TO220-5', 'PENTAWATT' ],
+			[ 'TDA2030A SUM * Liczba w opakowaniu:50 * Obudowa:PENTAWATT-V', 'PENTAWATT-V' ],
+
+			// SQL
+			# [ 'STR59041 SQL5 układ scalony', 'SQL5' ],
+			# [ 'STRF 6656 SQL5', 'SQL5' ],
 
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],
