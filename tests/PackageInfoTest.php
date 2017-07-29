@@ -221,6 +221,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			# [ 'Dioda ochronna ESD dwukierunkowa 50V 150W SC70 3-Pin', 'SOT23-3' ],
 			# [ 'Wzmacniacz operacyjny TSV522AIYST, 2,7 → 5,5 V 1.15MHz R-R MiniSO, 8-Pin', 'MINISO8' ],
 			# [ 'Transoptor, Wyjście tranzystorowe, 1 kanał, DIP, 4 piny/-ów, 60 mA, 5 kV, 100 %', 'DIP4' ],
+			# [ 'MCU 32-bit RX RX CISC 256KB Flash 3.3V/5V 64-Pin LQFP', 'LQFP64' ],
+			# [ 'MCU 16-bit RL78 CISC 256KB Flash 3.3V/5V 52-Pin LQFP Tray', 'LQFP52' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
