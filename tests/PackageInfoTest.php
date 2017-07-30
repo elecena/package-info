@@ -61,6 +61,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Tranzystor BC107 NPN 45V-100mA-300mW obudowa:TO-18', 'TO-18' ],
 			[ 'BC107B TO-18', 'TO-18' ],
 			[ 'BC107 TO-18 NPN 100mA 45V 300mW', 'TO-18' ],
+			[ '2N2222A Trans GP BJT NPN 50V 0.8A 3-Pin TO-206-AA', 'TO-18' ], // alias
 
 			# various TO packages
 			[ 'Tyrystor; T50N12; 50A; 1200V; TO48 M6; przykręcany; Greegoo', 'TO-48' ],
