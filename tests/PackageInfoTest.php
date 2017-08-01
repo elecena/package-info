@@ -345,6 +345,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Rectifier, 50V 1A, 2-Pin DO-41', 'DO-41' ],
 			[ 'DIODE SCHOTTKY 1A 30V DO220AA', 'DO-220AA' ],
 			[ '1N5408 - Dioda prostownicza 3A 1000V DO201AD', 'DO-201AD' ],
+			[ '1.5KE6V8 TVS BIDIRECTIONAL 6.8V 1500W CB429 (DO-201AD) 1.5KE6V8CA', 'DO-201AD' ],
+			[ 'ST MICROELECTRONICS 1.5KE24CA Dioda: transil; 1,5kW; 24V; 45A; dwukierunkowa; CB429', 'DO-201AD' ],
 			[ '1N5408 Dioda prostownicza 1000V/3A Obudowa: DO-27 = DO-201AD Temperatura: -55/+150°C', 'DO-27' ],
 
 			[ 'BA-4908 SILP-12 UKŁAD', 'SILP12' ],

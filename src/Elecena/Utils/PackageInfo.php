@@ -64,6 +64,7 @@ class PackageInfo {
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
 			// $ curl -s 'http://www.topline.tv/DO.html' | grep -oE 'DO-[0-9A-Z]+' | cut -d'-' -f 2 | sort -n | uniq | tr "\n" "|"
 			'DO-?(1|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|41G|42|43|44|45|200AA|200AB|201AA|201AD|201AE|202AA|203AA|203AB|204AA|204AB|204AC|204AD|204AE|204AF|204AG|204AH|204AL|205AA|205AB|208AA|209AA|210AA|211AA|213AA|213AB|214AA|214AB|214AC|214BA|215|215AA|215AB|215AC|216|216AA|218AB|219|219AB|220|220AA|241AB|244AC)',
+			'CB-?429',
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			// SOD323 / http://www.nxp.com/packages/SOD323
@@ -261,6 +262,9 @@ class PackageInfo {
 				// @see https://en.wikipedia.org/wiki/TO-18
 				// @see https://www.arrow.com/en/products/2n2222a/microsemi
 				'TO-206-AA' => 'TO-18',
+
+				// http://www.taydaelectronics.com/1-5ke6v8-tvs-bidirectional-6-8v-1500w-cb429-do-201ad-1-5ke6v8ca.html
+				'CB429' => 'DO-201AD',
 			];
 
 			if (array_key_exists($package, $normalizations)) {
