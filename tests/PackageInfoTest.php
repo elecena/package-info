@@ -300,6 +300,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Schottky Diodes & Rectifiers 100V 8A Single Die SMPC (TO-277A)', 'TO-277A' ],
 			[ 'AU2PJHM3_A/I Rectifiers 2A,600V, SMPC,FER, Avalanche SM', 'TO-277A' ],
 
+			// TO-202, 3-Lead Through-Hole, with Metal Tab
+			[ 'X0403BE TO202-1', 'TO-202-1' ],
+			[ 'MPS9805* TO202-1 NPN 65V 0.1A 0.5W =BC107', 'TO-202-1' ],
+			[ 'X0403DF ST 96+ TO202-3', 'TO-202-3' ],
+
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
 			[ 'SOD323F (SC-90)', 'SOD323F' ],
@@ -417,6 +422,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			// Analog Devices
 			[ '24 ld QFN (4x4mm w/2.8mm ep)', 'QFN24' ],
 			[ '80 ld LQFP (12x12x1.4mm)', 'LQFP80' ],
+
+			// triacs
+			[ 'Triak BTA 40/600B Imax = 40A Umax = 600V obudowa: RD91', 'RD91' ],
+			[ 'BTA40-600B - STMICROELECTRONICS - Triak, 600 V, 40 A, RD-91, 50 mA, 1.5 V, 1 W', 'RD91' ],
 		];
 	}
 }

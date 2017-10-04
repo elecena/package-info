@@ -138,6 +138,10 @@ class PackageInfo {
 			// http://www.marcospecialties.com/pinball-parts/VN02N
 			// TO-220-5 / https://github.com/KiCad/TO_SOT_Packages_THT.pretty/blob/master/TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1.kicad_mod
 			'PENTAWATT(-V)?',
+			// TO-202 is a type of plastic-molded package that features a flat metal tab at its back / http://eesemi.com/to202.htm
+			'TO-?202(-[13])?',
+			// RD91 package is for wire connections via direct soldering or push-on terminals
+			'RD-?(91)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
