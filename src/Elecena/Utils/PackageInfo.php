@@ -30,6 +30,9 @@ class PackageInfo {
 		// remove noise
 		$desc = strtr($desc, '®', ' ');
 
+		// TO220-ISO
+		$desc = str_replace('-ISO', 'ISO', $desc);
+
 		// 24 ld QFN -> 24-QFN
 		$desc = preg_replace('#(\d+) LD ([A-Z]+)#', '$1-$2', $desc);
 
@@ -44,12 +47,13 @@ class PackageInfo {
 			// https://en.wikipedia.org/wiki/TO-92
 			'TO-?92(-3)?',
 			// https://en.wikipedia.org/wiki/TO-220
-			'I?TO-?220(AB|AC|F|FP|SG|-3|-5)?',
+			'I?TO-?220(AB|AC|F|FP|SG|-3|-5|ISO|-ISO)?',
 			'TOP-?(3)',
 			// If more heat needs to be dissipated, devices in the also widely used TO-247 (or TO-3P) package can be selected / TO-3PF variant a slightly lower one / SOT429: TO-247
 			// TO-3PN - https://easyeda.com/teeler123/component/TO_3PN-89Fb5nhzt
 			'TO-?(247(AC|AD|-3)?|3|3P|3PF|3PN)',
-			'SOT-?429',
+			// https://www.nxp.com/packages/SOT82 -> SIP3; TO-220(JEDEC) / plastic single-ended package; 3 leads (in-line)
+			'SOT-?(82|429)',
 			// https://en.wikipedia.org/wiki/Small_Outline_Integrated_Circuit
 			'(LF|L|M|P|V|VF)?QFP(N)?-?(100|128|144|176|208|32|44|48|52|64|80)',
 			'DIL-?(8|14|16|18|20|22|24|28|32|36|40|42|48|64)',
@@ -203,6 +207,9 @@ class PackageInfo {
 				'SOT186' => 'TO-220F',
 				'SC67' => 'TO-220F',
 
+				// https://www.nxp.com/packages/SOT82 / SIP3; TO-220(JEDEC)
+				'SOT82' => 'TO-220',
+
 				// The SOT-227, or sometimes referred to as the ISOTOP® package
 				'ISOTOP' => 'SOT-227',
 				'SOT227' => 'SOT-227',
@@ -261,6 +268,9 @@ class PackageInfo {
 				// Pentawatt
 				'PENTAWATTV' => 'PENTAWATT-V',
 				'TO-220-5' => 'PENTAWATT',
+
+				// http://www.irf.com/part/55V-DUAL-N-CHANNEL-DIGITAL-AUDIO-HEXFET-POWER-MOSFET-IN-A-TO-220-FULL-PAK-ISO-PACKAGE/_/A~IRFI4024H-117P
+				'TO-220ISO' => 'TO-220 Full-Pak',
 
 				// TO-206-AA
 				// @see https://en.wikipedia.org/wiki/TO-18

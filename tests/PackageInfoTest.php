@@ -39,6 +39,12 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'DIODE ARRAY SCHOTTKY 45V ITO220', 'ITO-220' ],
 			[ 'Tranzystor 2SC5171 NPN, obudowa TO-220-3 Vce - 180V Ic - 2A para komplementarna z tranzystorem 2SA1930', 'TO-220-3' ],
 
+			[ 'Triak BT136X-800 4A/800V/70mA TO220ISO', 'TO-220 Full-Pak' ],
+			[' 2SC4234 Tranzystor NPN 1200V 3A 45W 8MHz TO220-ISO', 'TO-220 Full-Pak' ],
+
+			[ 'Triak BT134-600D 4A/600V SOT82', 'TO-220' ],
+			[ 'Triak BT134-600E 4A/600V TO126/SOT82', 'TO-126' ],
+
 			[ 'Tranzystor PNP 100 V 25 A 3 MHz HFE 10 TO-247 TIP36C 3-Pin', 'TO-247' ],
 			[ 'BU626A TO-3', 'TO-247' ],
 			[ 'Dioda FYA3010DNTU 30A 100V TO-3P 3-Pin', 'TO-247' ],
