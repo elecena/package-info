@@ -105,6 +105,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Pamięć; EEPROM; I2C; 128x8bit; 1,7÷5,5V; 400kHz; TSSOP8', 'TSSOP8' ],
 			[ 'Nadajnik-odbiornik linii; RS232 / V.28; 4,5÷5,5VDC; SSOP20', 'SSOP20' ],
 
+			[ '24C16N-10SI 2,7 Atm  SOP08', 'SOP8' ],
+
 			[ 'Odbiornik linii; RS232; L.odb:4; 4,5÷5,5VDC; SO14; 0÷75°C', 'SO14' ],
 			[ 'Nadajnik-odbiornik linii; RS232,full duplex; 4,5÷5,5VDC; SO16', 'SO16' ],
 			[ 'Odbiornik linii; RS422,RS423; L.odb:4; 4,5÷5,5VDC; SO16; -40÷85°C', 'SO16' ],
@@ -132,6 +134,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'MOSFET, N CHANNEL, 300V, 0.2A, SOT-89-3' ,'SOT89-3' ],
 			[ 'RF Amplifier IC, 21 dB Gain / 4.5 dB Noise, DC to 4 GHz, 5 V supply, SOT-89-4', 'SOT89-3' ],
 			[ 'IC LDO 0.2A LOW DROPOUT SOT-89-5', 'SOT89-5' ],
+
+			[ '2SK956 Tranzystor N-MOSFET 800V 9A 150W 1R5 SOT93', 'TO-218' ],
+			[ 'Transistor NPN TO-218 60 V 15 A 90 W', 'TO-218' ],
 
 			[ 'BSP52E6327 INFIN 0205 SOT223', 'SOT223' ],
 			[ 'PNP high-voltage low VCEsat Breakthrough In Small Signal (BISS) transistor in a SOT223 (SC-73) medium power', 'SOT223' ],
@@ -169,6 +174,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Transoptor 4N37 z tranzystorem 1-kanałowy DC DIP 6 Vishay', 'DIP6' ],
 			[ 'IC VREF SERIES PREC 5V 8-CERDIP', 'CERDIP8' ],
 			[ 'IC FPS POWER SWITCH 650V 8-MDIP', 'MDIP8' ],
+			[ '24C128-10PI-2,7 Atm PDIP08', 'PDIP8' ],
 			[ 'LNK6769V IC LINKSWITCH 39W 54W 12-EDIP', 'EDIP12' ],
 			[ 'TODX283 PRODUCENT / MANUFACTURER: TOSHIBA OBUDOWA / PACKAGE: DIP-10 OPTOELECTRONIC', 'DIP10' ],
 			[ 'FOO DIP-11', false ],
