@@ -64,8 +64,8 @@ class PackageInfo {
 			'((H|HT|HTS|LS|M|S|T|TS|TV|Q|V|VS)?SOP?|SOIC)-?(4|5|6|8|10|12|14|16|18|20|24|28|30|32|36|38|44|48|54|56)(-J|-W|-EP|-POWERPAD)?',
 			// https://en.wikipedia.org/wiki/Dual_in-line_package
 			'(CERDIP|CDIP|PDIP|DIP|MDIP|EDIP)-?(6|8|10|12|14|16|18|20|22|24|28|32|36|40|42|48|64)',
-			// Slim plastic dip" (0.3" lead spacing) versus the usual 0.4" spacing used on 28- and 40-pin packages
-			'SP?DIP-?(28|40)',
+			// Slim plastic dip" (0.3" lead spacing) versus the usual 0.4" spacing used on 28- and 40-pin packages / http://www.topline.tv/dip.html
+			'SP?DIP-?(24|28|32|40|42|52|56|64)',
 			'HC-?49([/-]?[US])?',
 			// DO packages
 			// http://www.topline.tv/DO.html / https://en.wikipedia.org/wiki/DO-204 / https://en.wikipedia.org/wiki/DO-214 / https://en.wikipedia.org/wiki/Metal_electrode_leadless_face
