@@ -48,6 +48,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Tranzystor PNP 100 V 25 A 3 MHz HFE 10 TO-247 TIP36C 3-Pin', 'TO-247' ],
 			[ 'BU626A TO-3', 'TO-247' ],
 			[ 'Dioda FYA3010DNTU 30A 100V TO-3P 3-Pin', 'TO-247' ],
+			[ '2SC3320 TO-3P TRANSISTOR', 'TO-247' ],
 			[ '2SC-3421 NPN 1A/120V/10W SOT-429 TRANZYS', 'TO-247' ],
 			[ 'TRANS NPN DARL 400V 15A TO-247-3', 'TO-247-3' ],
 			[ 'TRANSISTOR, BIPOLAR, NPN, 600V, 96A, TO-247AC', 'TO-247AC' ],
@@ -137,6 +138,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ '2SK956 Tranzystor N-MOSFET 800V 9A 150W 1R5 SOT93', 'TO-218' ],
 			[ 'Transistor NPN TO-218 60 V 15 A 90 W', 'TO-218' ],
+			[ 'BTS555 MOSFET 165A/62V driver TO218AB-5pin', 'TO-218AB-5' ],
+			[ 'BTS555 Transistor N Channel MOSFET Case TO218AB-5' ,'TO-218AB-5' ],
+			[ 'IC SW PWR HISIDE TO-218-5-146', 'TO-218-5-146' ],
 
 			[ 'BSP52E6327 INFIN 0205 SOT223', 'SOT223' ],
 			[ 'PNP high-voltage low VCEsat Breakthrough In Small Signal (BISS) transistor in a SOT223 (SC-73) medium power', 'SOT223' ],
