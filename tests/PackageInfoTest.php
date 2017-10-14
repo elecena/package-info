@@ -391,6 +391,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'UKŁAD SCALONY AN8028 ZIP-9 PIN', 'ZIP9' ],
 			[ 'L2724-W99EM0049 Encapsulation:ZIP-9,Lowdrop Dual Power OP AMP IC NEW', 'ZIP9' ],
 			[ 'STR5412 * Liczba w opakowaniu:25 * Obudowa:ZIP-5', 'ZIP5' ],
+			[ 'TDA7376B PRODUCENT / MANUFACTURER: ST OBUDOWA / PACKAGE: ZIP15 POWER AMPLIFIER FOR CAR RADIO2×35W', 'ZIP15' ],
+			[ 'TDA7378 ZIP 15,DUAL BRIDGE AUDIO AMPLIFIER', 'ZIP15' ],
 
 			// Pentawatt
 			[ 'VIPER50A-E STM Current Mode Controller 700V 1.5A  PENTAWATT VIPER50A', 'PENTAWATT' ],

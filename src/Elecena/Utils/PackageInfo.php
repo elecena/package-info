@@ -40,7 +40,7 @@ class PackageInfo {
 		$desc = preg_replace('#(\d{1,})-\s?([2A-Z]{3,})#', '$2$1', $desc);
 
 		// DIP 6 -> DIP-6
-		$desc = preg_replace('#(\b(DIP))\s([1-9]\d?)#', '$1-$3', $desc);
+		$desc = preg_replace('#(\b(DIP|ZIP))\s([1-9]\d?)#', '$1-$3', $desc);
 
 		// SOP08 -> SOP8
 		$desc = preg_replace('#([A-Z]{3,})0(\d)#', '$1$2', $desc);
@@ -150,7 +150,7 @@ class PackageInfo {
 			// SILP package / https://sites.google.com/site/nhecomponents/components-index/integrated-circuits/la-series
 			'SILP-?(7|9|10|11|12|13|14|15|16|18|23|25|30)',
 			// ZIP - Zig-zag in-line package
-			'ZIP-?(5|9|20|24|40)',
+			'ZIP-?(5|9|15|20|24|40)',
 			// Pentawatt / https://easyeda.com/antonellapuricelli99/component/Pentawatt_V-GEZvN5nFz & https://easyeda.com/Junikos/component/PENTAWATT-lHBTNHYgy
 			// http://www.marcospecialties.com/pinball-parts/VN02N
 			// TO-220-5 / https://github.com/KiCad/TO_SOT_Packages_THT.pretty/blob/master/TO-220-5_Pentawatt_Multiwatt-5_Vertical_StaggeredType1.kicad_mod
