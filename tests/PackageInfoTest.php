@@ -405,8 +405,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TDA2030A SUM * Liczba w opakowaniu:50 * Obudowa:PENTAWATT-V', 'PENTAWATT-V' ],
 
 			// SQL
-			# [ 'STR59041 SQL5 układ scalony', 'SQL5' ],
-			# [ 'STRF 6656 SQL5', 'SQL5' ],
+			[ 'STR59041 SQL5 układ scalony', 'SQL5' ],
+			[ 'STRF 6656 SQL-5', 'SQL5' ],
+			[ 'TA8200AH SQL12 układ scalony', 'SQL12' ],
+			[ 'TDA8944J SQL17', 'SQL17' ],
 
 			// no package data
 			[ 'Tranzystor: NPN; STO39; bipolarny; 75V; 500mA; 800mW', false ],

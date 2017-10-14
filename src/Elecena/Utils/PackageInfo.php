@@ -159,6 +159,8 @@ class PackageInfo {
 			'TO-?202(-[13])?',
 			// RD91 package is for wire connections via direct soldering or push-on terminals
 			'RD-?(91)',
+			// SQL package
+			'SQL-?(5|9|11|12|15|17|23)',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
