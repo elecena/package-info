@@ -119,6 +119,8 @@ class PackageInfo {
 			// DPAK (TO-252) / https://en.wikipedia.org/wiki/TO-263
 			'(D-?PAK|D2PAK|DDPAK)-?(3|5)?',
 			'TO-?(252|252-3|252-5|263|263-5)(AA|AB)?',
+			// I2PAK (TO-262) PACKAGE / https://www.vishay.com/mosfets/i2pak-to-262-package/
+			'I2PAK',
 			// SON
 			'(PG-TD|W|V|X|X2)?SON-?(4|6|8|10)',
 			// Leadframe Chip Scale Package / https://en.wikipedia.org/wiki/Chip-scale_package
@@ -251,6 +253,10 @@ class PackageInfo {
 				'DDPAK3' => 'TO-263',
 				'DDPAK5' => 'TO-263',
 				'D2PAK' => 'TO-263',
+
+				// I2PAK (TO-262)
+				// https://www.vishay.com/mosfets/i2pak-to-262-package/
+				'I2PAK' => 'TO-262',
 
 				// ... widely used TO-247 (or TO-3P)
 				// @see http://www.nxp.com/packages/SOT429.html

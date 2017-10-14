@@ -75,6 +75,11 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Tyrystor; 50RIA120M; 50A; 1200V; TO65 M6; przewlekany (THT); 200mA; Greegoo; RoHS', 'TO-65' ],
 			[ 'Wzmacniacz operacyjny OPA128LM 1MHz TO-99, 8-Pin', 'TO-99' ],
 
+			# I2PAK (TO-262)
+			[ 'STD1NK60-1 Tranzystor: N-MOSFET; unipolarny; 600V; 0,63A; 30W; I2PAK', 'TO-262' ],
+			[ 'IPI65R310CFD high voltage CoolMOS™ MOSFETs with integrated fast body diode I2PAK' , 'TO-262' ],
+			[ 'IPI80N06S4L07AKSA1 Trans MOSFET N-CH 60V 80A Automotive 3-Pin(3+Tab) TO-262 Tube', 'TO-262' ],
+
 			# T packages
 			[ 'Tyrystor; T63-200-04-50; 200A; 400V; T63; przykręcany; Lamina', 'SOT-23' ],
 
