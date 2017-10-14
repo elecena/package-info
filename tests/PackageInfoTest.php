@@ -381,6 +381,8 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LA-4280= ( BRAK ) 2x AF- OS 32V 4A 2X10W (32V/ 8Ohm ) ( 14- SILP )', 'SILP14' ],
 			[ 'TDA-1562-Q SILP-16 UKŁAD', 'SILP16' ],
 			[ 'LA-5609 SILP-18 UKŁAD', 'SILP18' ],
+			[ 'TDA1562Q Układ scalony wzmacniacz mocy 70W 4R SIL17', 'SIL17' ],
+			[ 'TDA-8947-J SIL-17 UKŁAD', 'SIL17' ],
 
 			// ZIP - http://www.interfacebus.com/ic-package-zig-zag-drawing.html
 			[ 'układ TC514256Z-10 DRAM 256kx4 ZIP-20 TOSHIBA', 'ZIP20' ],
