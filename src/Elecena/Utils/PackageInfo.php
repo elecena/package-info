@@ -161,6 +161,9 @@ class PackageInfo {
 			'RD-?(91)',
 			// SQL package
 			'SQL-?(5|9|11|12|15|17|23)',
+			// https://www.nxp.com/packages/SOT399 / SOT399: TOP-3D - plastic single-ended through-hole package; mountable to heatsink; 1 mounting hole; 3 in-line leads
+			'SOT-?399',
+			'TOP-?3D',
 
 			// for normalization
 			'(SOT-?186|SC-?67)',
@@ -278,6 +281,8 @@ class PackageInfo {
 				'SMV' => 'SOT25',
 				'SM6' => 'SOT26',
 				'SC74' => 'SOT457',
+
+				'TOP3D' => 'SOT399',
 
 				'SMPC' => 'TO-277A',
 

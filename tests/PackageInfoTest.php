@@ -104,6 +104,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Dioda prostownicza, Jedna, 80 V, 100 mA, TO-253, 1.2 V, 4 piny/-ów', 'SOT143' ],
 			[ 'TRANS RF NPN 12V 80MA SOT343', 'SOT343' ],
 
+			[ 'BU2525AX NPN 800V 12A 45W SOT399', 'SOT399' ],
+			[ 'TRANZYSTOR NPN 1500V 12A 45W IZOLOWANY TOP3D', 'SOT399' ],
+
 			[ 'Pamięć; EEPROM; I2C; 128x8bit; 1,8÷5,5V; 400kHz; DFN8', 'DFN8' ],
 
 			[ 'Pamięć; EEPROM; UNI/O; 256x8bit; 1,8÷5,5V; 100kHz; MSOP8', 'MSOP8' ],
