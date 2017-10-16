@@ -89,6 +89,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'MOSFET 2N-CH 1200V 34A SP4', 'SP4' ],
 			[ 'MOSFET 6N-CH 600V 116A SP6-P', 'SP6-P' ],
 
+			// SOT packages / https://www.nxp.com/packages/search?q=SOT&type=0
 			[ 'IGBT 1200V 35A 260W SOT-227', 'SOT-227' ],
 			[ 'MOD THYRISTOR SGL 1200V SOT-227B', 'SOT-227B' ],
 			[ 'MOD THYRISTOR SGL 1200V SOT-227B', 'SOT-227B' ],
@@ -106,6 +107,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 
 			[ 'BU2525AX NPN 800V 12A 45W SOT399', 'SOT399' ],
 			[ 'TRANZYSTOR NPN 1500V 12A 45W IZOLOWANY TOP3D', 'SOT399' ],
+
+			[ 'BU2525AF SOT199', 'SOT199' ],
+			[ 'IC GATE OR SGL 2-INPUT SOT953', 'SOT953' ],
 
 			[ 'Pamięć; EEPROM; I2C; 128x8bit; 1,8÷5,5V; 400kHz; DFN8', 'DFN8' ],
 
@@ -171,7 +175,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'TRANS 2PNP PREBIAS 0.3W SMV', 'SOT25' ],
 			[ 'HMC197B GaAs MMIC SOT26 SPDT Switch, DC - 3 GHz', 'SOT26' ],
 			[ 'TRANS 2NPN PREBIAS 0.3W SM6', 'SOT26' ],
-			[ 'Diode SOT27', false ],
+			[ 'Diode SOT17', false ],
 
 			[ 'Sieć tranzystorów bipolarnych, NPN, 50 V, 300 mW, 100 mA, 30 hFE, SOT-457', 'SOT457' ],
 			[ 'Tranzystor: NPN / PNP; bipolarny; komplementarne; 80V; 500mA; SC74', 'SOT457' ],
