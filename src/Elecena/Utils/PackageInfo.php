@@ -161,6 +161,8 @@ class PackageInfo {
 			'SQL-?(5|9|11|12|15|17|23)',
 			// https://www.nxp.com/packages/SOT399 / SOT399: TOP-3D - plastic single-ended through-hole package; mountable to heatsink; 1 mounting hole; 3 in-line leads
 			'TOP-?3D',
+			// ISO package
+			'ISO-?218',
 
 			// for normalization
 			'SC-?67',

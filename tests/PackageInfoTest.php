@@ -461,6 +461,9 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			// triacs
 			[ 'Triak BTA 40/600B Imax = 40A Umax = 600V obudowa: RD91', 'RD91' ],
 			[ 'BTA40-600B - STMICROELECTRONICS - Triak, 600 V, 40 A, RD-91, 50 mA, 1.5 V, 1 W', 'RD91' ],
+
+			// ISO packages
+			[ 'BU2508D INCH 0410 ISO218', 'ISO218' ],
 		];
 	}
 }
