@@ -375,6 +375,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'Rezystor SMD 510K 0102 1% MICRO-MELF', 'MicroMELF' ],
 
 			[ 'Pojedyncza dioda Zenera, 6.2 V, 500 mW, DO-204AA, 2 piny/-ów, 200 °C', 'DO-7' ],
+			[ 'NTE6155 STANDARD DIODE, 150A, 400V, DO-8', 'DO-8' ],
 			[ 'Dioda prostownicza 1000V/1,5A Obudowa: DO-15 Temperatura: -55/+150°C', 'DO-15' ],
 			[ 'Rectifier, 50V 1A, 2-Pin DO-41', 'DO-41' ],
 			[ 'DIODE SCHOTTKY 1A 30V DO220AA', 'DO-220AA' ],
