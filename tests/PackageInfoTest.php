@@ -383,6 +383,7 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ '1.5KE6V8 TVS BIDIRECTIONAL 6.8V 1500W CB429 (DO-201AD) 1.5KE6V8CA', 'DO-201AD' ],
 			[ 'ST MICROELECTRONICS 1.5KE24CA Dioda: transil; 1,5kW; 24V; 45A; dwukierunkowa; CB429', 'DO-201AD' ],
 			[ '1N5408 Dioda prostownicza 1000V/3A Obudowa: DO-27 = DO-201AD Temperatura: -55/+150°C', 'DO-27' ],
+			[ 'Dioda:  prostownicza, SMD, 2kV, 2A, Opakowanie:  taśma, DO214AA', 'DO-214AA' ],
 
 			[ 'BA-4908 SILP-12 UKŁAD', 'SILP12' ],
 			[ 'LA-7830=LA-7832 SILP-7 UKŁAD', 'SILP7' ],
