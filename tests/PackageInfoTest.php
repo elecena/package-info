@@ -392,6 +392,10 @@ class ParametersParserTest extends \PHPUnit_Framework_TestCase {
 			[ 'LA-5609 SILP-18 UKŁAD', 'SILP18' ],
 			[ 'TDA1562Q Układ scalony wzmacniacz mocy 70W 4R SIL17', 'SIL17' ],
 			[ 'TDA-8947-J SIL-17 UKŁAD', 'SIL17' ],
+			[ 'UKŁAD SCALONY TDA4601 SIL9 SIEMENS', 'SIL9' ],
+
+			[ 'TDA 4601 SIP9 ORG.-SIEMENS', 'SIP9' ],
+			[ '2SA798 PRODUCENT / MANUFACTURER: MIT OBUDOWA / PACKAGE: SIP-5 5-PIN P SUPERVISORY CIRCUIT', 'SIP5' ],
 
 			// ZIP - http://www.interfacebus.com/ic-package-zig-zag-drawing.html
 			[ 'układ TC514256Z-10 DRAM 256kx4 ZIP-20 TOSHIBA', 'ZIP20' ],

@@ -145,8 +145,8 @@ class PackageInfo {
 			'Z3|SMPC',
 			// TO-262
 			'TO-?262(AA)?',
-			// SILP package / https://sites.google.com/site/nhecomponents/components-index/integrated-circuits/la-series
-			'SILP?-?(7|9|10|11|12|13|14|15|16|17|18|23|25|30)',
+			// SIL/SIP/SILP package / https://sites.google.com/site/nhecomponents/components-index/integrated-circuits/la-series
+			'SI(L|P|LP)-?(5|7|9|10|11|12|13|14|15|16|17|18|23|25|30)',
 			// ZIP - Zig-zag in-line package
 			'ZIP-?(5|9|15|20|24|40)',
 			// Pentawatt / https://easyeda.com/antonellapuricelli99/component/Pentawatt_V-GEZvN5nFz & https://easyeda.com/Junikos/component/PENTAWATT-lHBTNHYgy
