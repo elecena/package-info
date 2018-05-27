@@ -1,11 +1,12 @@
 <?php
 
 use Elecena\Utils\PackageInfo;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Set of integration tests for ParametersParser class
  */
-class ParametersParserTest extends \PHPUnit_Framework_TestCase {
+class ParametersParserTest extends TestCase {
 
 	/**
 	 * @param string $desc
