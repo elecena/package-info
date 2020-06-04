@@ -210,6 +210,7 @@ class ParametersParserTest extends TestCase {
 			[ 'Atmega16A-PU DIP40', 'DIP40' ],
 
 			[ 'Mikrokontroler ARM; Flash:64kB; SRAM:16kB; 48MHz; PG-LQFP-64', 'LQFP64' ],
+			[ 'LQFP 144 20x20x1.4', 'LQFP144' ],
 
 			[ 'Kwarc, rezonator kwarcowy 49,95416MHz [HC-49U]', 'HC49U' ],
 			[ '40.00 MHZ Rezonator: kwarcowy; 40MHz; 30ppm; 16pF÷30pF; THT; HC49/U 100ST 100', 'HC49U' ],
