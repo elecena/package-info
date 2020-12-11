@@ -248,13 +248,13 @@ class ParametersParserTest extends TestCase {
 			[ 'Battery monitor IC with Coulomb counter/gas gauge, MiniSO-8, STM, RoHS', 'MINISO8' ],
 
 			# TODO: N-pin handling
-			# [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ],
-			# [ 'Wzmacniacz operacyjny LF411CN/NOPB 4MHz MDIP, 8-Pin', 'MDIP8' ],
-			# [ 'Dioda ochronna ESD dwukierunkowa 50V 150W SC70 3-Pin', 'SOT23-3' ],
-			# [ 'Wzmacniacz operacyjny TSV522AIYST, 2,7 → 5,5 V 1.15MHz R-R MiniSO, 8-Pin', 'MINISO8' ],
-			# [ 'Transoptor, Wyjście tranzystorowe, 1 kanał, DIP, 4 piny/-ów, 60 mA, 5 kV, 100 %', 'DIP4' ],
-			# [ 'MCU 32-bit RX RX CISC 256KB Flash 3.3V/5V 64-Pin LQFP', 'LQFP64' ],
-			# [ 'MCU 16-bit RL78 CISC 256KB Flash 3.3V/5V 52-Pin LQFP Tray', 'LQFP52' ],
+			// [ 'PIC24HJ64GP502-I/MM 16 bit PIC 40MIPS 64 kB Flash 8 kB RAM 28-Pin QFN-S', 'QFN28-S' ],
+			// [ 'Wzmacniacz operacyjny LF411CN/NOPB 4MHz MDIP, 8-Pin', 'MDIP8' ],
+			// [ 'Dioda ochronna ESD dwukierunkowa 50V 150W SC70 3-Pin', 'SOT23-3' ],
+			// [ 'Wzmacniacz operacyjny TSV522AIYST, 2,7 → 5,5 V 1.15MHz R-R MiniSO, 8-Pin', 'MINISO8' ],
+			// [ 'Transoptor, Wyjście tranzystorowe, 1 kanał, DIP, 4 piny/-ów, 60 mA, 5 kV, 100 %', 'DIP4' ],
+			// [ 'MCU 32-bit RX RX CISC 256KB Flash 3.3V/5V 64-Pin LQFP', 'LQFP64' ],
+			// [ 'MCU 16-bit RL78 CISC 256KB Flash 3.3V/5V 52-Pin LQFP Tray', 'LQFP52' ],
 
 			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
 			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
@@ -305,7 +305,6 @@ class ParametersParserTest extends TestCase {
 			[ 'DO-205AB, DO-9', 'DO-205AB' ],
 			[ 'DO-213AB (MELF, LL41)', 'DO-213AB' ],
 			[ 'DO-214AB, (SMC)', 'DO-214AB' ],
-			#[ 'LFPAK56, Power-SO8', '' ],
 
 			[ 'Tranzystor P-MOSFET 55V 18A DPAK TO-252', 'TO-252' ],
 			[ 'TO-252, (D-Pak)', 'TO-252' ],
@@ -432,8 +431,8 @@ class ParametersParserTest extends TestCase {
 			[ 'Tranzystor: NPN; DIP220; bipolarny; 75V; 500mA; 800mW', false ],
 
 			// igbt-power normalization
-			# [ 'TO-261-4', '-' ],
-			# [ 'TO-226-3', '-' ],
+			// [ 'TO-261-4', '-' ],
+			// [ 'TO-226-3', '-' ],
 			[ 'TO-126', 'TO-126' ],
 			[ '16-SOIC', 'SOIC16' ],
 			[ '16-TSSOP', 'TSSOP16' ],
@@ -449,7 +448,7 @@ class ParametersParserTest extends TestCase {
 			[ 'NIS5135MN1TXG Kontroler Hot Swap, zasilanie 3.1V do 18V, DFN-10', 'DFN10' ],
 			[ 'TO-263AB (D²PAK)', 'TO-263AB' ],
 			[ 'D²PAK (TO-263AB)', 'TO-263AB' ],
-			#[ 'NCP103AMX105TCG Stabilizator napięcia LDO, stały, wejście 1.7V do -5.5V, wyjście 1.05Vnom / 150mA, µDFN-4', 'µDFN4' ], # TODO
+			// [ 'NCP103AMX105TCG Stabilizator napięcia LDO, stały, wejście 1.7V do -5.5V, wyjście 1.05Vnom / 150mA, µDFN-4', 'µDFN4' ], # TODO
 
 			// https://en.wikipedia.org/wiki/DO-204
 			[ 'DO-204AL (DO-41)', 'DO-41' ],
