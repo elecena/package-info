@@ -305,7 +305,6 @@ class ParametersParserTest extends TestCase {
 			[ 'DO-205AB, DO-9', 'DO-205AB' ],
 			[ 'DO-213AB (MELF, LL41)', 'DO-213AB' ],
 			[ 'DO-214AB, (SMC)', 'DO-214AB' ],
-			#[ 'LFPAK56, Power-SO8', '' ],
 
 			[ 'Tranzystor P-MOSFET 55V 18A DPAK TO-252', 'TO-252' ],
 			[ 'TO-252, (D-Pak)', 'TO-252' ],
