@@ -16,7 +16,6 @@
             "email": "macbre@elecena.pl"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "Elecena\\Utils\\": "src/Elecena/Utils/"
