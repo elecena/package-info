@@ -1,0 +1,10 @@
+# dependabot.yml file with
+# customized schedule for version updates
+
+version: 2
+updates:
+  # Keep php dependencies up to date
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
