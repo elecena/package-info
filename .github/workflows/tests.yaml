@@ -15,9 +15,7 @@ jobs:
         php-versions:
         - '7.3'
         - '7.4'
-        # fails on composer check-platform-reqs:
-        # php            8.0.0     doctrine/instantiator requires php (^7.1)  failed
-        # - '8.0' 
+        - '8.0' 
 
     steps:
     - name: Checkout
