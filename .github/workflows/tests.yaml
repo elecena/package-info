@@ -10,13 +10,17 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php-versions: ['7.3', '7.4', '8.0']
+
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Install PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: 7.4
+        php-version: ${{ matrix.php-versions }}
 
     - name: Compose setup
       run: |
@@ -26,4 +30,4 @@ jobs:
         composer install --no-interaction
 
     - name: Test the code
-      run: composer exec phpunit
+      run: ./vendor/bin/phpunit --verbose
