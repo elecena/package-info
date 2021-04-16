@@ -209,6 +209,9 @@ class ParametersParserTest extends TestCase {
 			[ 'Mikrokontroler AVR-RISC Atmel ATTINY26-16PU, DIL-20, 0 - 16 MHz Flash: 2 kB, RAM: 128', 'DIL20' ],
 			[ 'Atmega16A-PU DIP40', 'DIP40' ],
 
+			[ 'DIP-4 HV CPL 10kV 600mil 50-300% CTR -e4', 'DIP4' ],
+			[ 'DIP-6 CPL 40-80% CTR -e3', 'DIP6' ],
+
 			[ 'Mikrokontroler ARM; Flash:64kB; SRAM:16kB; 48MHz; PG-LQFP-64', 'LQFP64' ],
 			[ 'LQFP 144 20x20x1.4', 'LQFP144' ],
 
