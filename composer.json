@@ -20,5 +20,13 @@
         "psr-4": {
             "Elecena\\Utils\\": "src/Elecena/Utils/"
         }
-    }
+    },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ],
+        "coverage": [
+            "XDEBUG_MODE=coverage phpunit --coverage-html=.coverage --coverage-clover=.coverage.xml --coverage-text"
+        ]
+  }
 }
