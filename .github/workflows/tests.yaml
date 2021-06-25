@@ -33,7 +33,7 @@ jobs:
         composer install --no-interaction
 
     - name: Test the code
-      run: ./vendor/bin/phpunit --verbose
+      run: composer run coverage
 
     - name: Upload coverage results to Coveralls
       if: matrix.php-versions == '8.0'
