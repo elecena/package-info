@@ -1,3 +1,7 @@
 /vendor/
 composer.phar
 *.swp
+
+.coverage.xml
+.coverage/
+.phpunit.result.cache
